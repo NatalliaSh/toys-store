@@ -1,18 +1,14 @@
 [
   {
     "title": "Teddy Bear",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": "Adorably cute 11 Inches plush stuffed animal toy is very soft, beautiful and cuddly. Its embroidered eyes give it an attractive, real-life look that everyone will make any child feel more comforted. Surface washable.",
     "images": [],
     "main_image": "TB1.png",
@@ -28,18 +24,14 @@
   },
   {
     "title": "Mega Plush Toy",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": "Made with 100% stretchy plush fabric, this Plush Toy is incredibly soft and comfortable to hold and cuddle.",
     "images": [],
     "main_image": "plush1.png",
@@ -55,18 +47,14 @@
   },
   {
     "title": "Cute Dog",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " 5 inch plush toys dressed in adorable outfits!  Made from a soft, huggable material that meets famous GUND quality standards, this plush toy features surface-washable construction for easy cleaning. Appropriate for ages one and up.",
     "images": [],
     "main_image": "cuteDog1.png",
@@ -82,18 +70,14 @@
   },
   {
     "title": "Little Friend",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": true,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": true,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " SUPER SOFT PLUSH AND BEAUTIFUL EYES make this interactive toy a purrfect birthday or holiday gift for girls ages 4 and up. \n 35+ SOUND-&-MOTION COMBOS: furReal North the Sabertooth Kitty animatronic toy shivers, ch-ch-chatters her teeth and makes adorable sounds as she starts to feel safe and warm again",
     "images": [],
     "main_image": "friend1.png",
@@ -109,18 +93,14 @@
   },
   {
     "title": "Happy Flower",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " FSC-certified classic toy set for engaging a little one's hands, eyes, and mind by sorting and stacking colorful blocks and rings.",
     "images": [],
     "main_image": "IMAGEflower.png",
@@ -136,18 +116,14 @@
   },
   {
     "title": "Lift Car",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": false
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": false,
+    "bestseller": true,
     "description": " This wooden lift car helps develop gross motor skills, hand-eye coordination, and inspires imaginative play. For preschool conductors ages 3 years and older.",
     "images": [],
     "main_image": "IMAGEliftCar.png",
@@ -163,18 +139,14 @@
   },
   {
     "title": "Wooden Camera",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This kids camera toy is made of natural wood, polish smooth surface does no harm to your baby's hands, easy to transport and it will not occupy much space, portable and light weight toy camera for your sweet baby.",
     "images": [],
     "main_image": "IMAGEwoodCam.png",
@@ -190,18 +162,14 @@
   },
   {
     "title": "Little Rabbit",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This Wooden Rabbit Stacker helps toddlers learn while playing! Playful Stacker encourages logical ability and hand-eye coordination. Made from child safe materials with quality wood craftmanship and non-toxic finishes. For ages 24 months old and up",
     "images": [],
     "main_image": "IMAGErabbit.png",
@@ -217,18 +185,14 @@
   },
   {
     "title": "Polar Bear Stacker",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This Wooden Polar Bear Stacker helps toddlers learn while playing! Playful Stacker encourages logical ability and hand-eye coordination. Made from child safe materials with quality wood craftmanship and non-toxic finishes. For ages 24 months old and up.",
     "images": ["polarBear1.jpg"],
     "main_image": "polarBearMain.jpg",
@@ -244,18 +208,14 @@
   },
   {
     "title": "Car Carrier Truck",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": false
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": false,
+    "bestseller": false,
     "description": " This set includes a truck that picks up and delivers 4 colorful cars. The car carrier is easy to load, with a second level that lowers to allow kids roll the vehicles onto 2 different levels.",
     "images": ["carCarrier1.jpg", "carCarrier2.jpg"],
     "main_image": "carCarrierMain.jpg",
@@ -271,18 +231,14 @@
   },
   {
     "title": "Dinosaur Wooden Chunky Puzzle",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": true,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": true,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " 7-piece puzzle and picture-under-pieces puzzle board. Includes pteranodon, ankylosaurus, apatosaurus, T-Rex, triceratops, stegosaurus, and hadrosaurus pieces.",
     "images": ["dinoPuzzle1.jpg", "dinoPuzzle2.jpg"],
     "main_image": "dinoPuzzleMain.jpg",
@@ -298,18 +254,14 @@
   },
   {
     "title": "Alphabet Wooden Puzzles ",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": true,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": true,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Wooden Alphabet Letter Puzzle set includes 52 durable wooden pieces that help kids learn the ABCs as they match letters to pictures.",
     "images": ["woodenPuzzl1.jpg"],
     "main_image": "woodenPuzzlM.jpg",
@@ -325,18 +277,14 @@
   },
   {
     "title": "Wooden Pizza Play",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Our pizza kitchen toy set comes with a brightly colored tray, a pizza cutter, a spatula and a wooden box for storage, and the pizza makes “slicing” noises when cut. The self stick tabs hold the pieces together. Styles and colors may vary. Includes six slice able wooden pizza slices and more than 30 toppings for pretend play fun",
     "images": ["pizza1.jpg", "pizza2.jpg"],
     "main_image": "pizzaMain.jpg",
@@ -352,18 +300,14 @@
   },
   {
     "title": "Car Ramp Racing",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": false
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": false,
+    "bestseller": false,
     "description": " This classic race track is made from stable wood and has 4 ramps with 4 corresponding colored wooden cars that roll. Perfect for a child’s first car set. On your mark, get set, go!",
     "images": ["carRacing1.jpg", "carRacing2.jpg"],
     "main_image": "carRacingM.jpg",
@@ -379,18 +323,14 @@
   },
   {
     "title": "Wooden Vehicle Puzzle",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": true,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": false
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": true,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": false,
+    "bestseller": false,
     "description": " The puzzles for kids ages 2-6 are made of high-quality basswood, which is hard and clear in texture, which ensures that toddlers little hands can easily grasp the puzzle and complete it. The edges of the toddler puzzles are smooth and burr-free, and we can let children play with confidence.",
     "images": ["vehiclePuzzle1.jpg", "vehiclePuzzle2.jpg"],
     "main_image": "vehiclePuzzleM.jpg",
@@ -406,18 +346,14 @@
   },
   {
     "title": "Heart Beads Wooden Set ",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Heart Beads Wooden Bead Set is an easy-to-use arts and crafts kit for designing and stringing necklaces and more. It includes 120+ beads and 5 color-coordinated cords.",
     "images": ["heartSet1.jpg", "heartSet2.jpg"],
     "main_image": "heartSetM.jpg",
@@ -433,18 +369,14 @@
   },
   {
     "title": "Wooden Farm Animal Puzzle",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": true,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": true,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Farm Chunky Puzzle features 8 pieces of durable and easy-to-grasp wood that display full-color pictures of farm animals. The design of the chunky wooden pieces ensures kids can easily grasp and negotiate them, and they display full-color pictures beneath to offer visual clues.",
     "images": ["farmPuzzl1.jpg", "farmPuzzl2.jpg"],
     "main_image": "farmPuzzlM.jpg",
@@ -460,18 +392,14 @@
   },
   {
     "title": "Wooden Safari Animal Puzzle ",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": true,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": true,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " 3-Piece wooden safari animal-themed jumbo knob puzzle.Pieces include giraffe, Tiger, and lion with easy-grasp wooden knob noses.",
     "images": ["safariPuzzle1.jpg", "safariPuzzle2.jpg"],
     "main_image": "safariPuzzleM.jpg",
@@ -487,18 +415,14 @@
   },
   {
     "title": "Matryoshka Dolls PAW Patrol",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Matryoshka Dolls PAW Patrol Figurines are best idea for decor and absolutely safe for kids. Set includes 7 pcs. Largest nesting doll is 5.3 in; smallest is 0.9. Unique Wooden Toys for Kids",
     "images": ["matryoshkaPAW1.jpg", "matryoshkaPAW2.jpg"],
     "main_image": "matryoshkaPAW.jpg",
@@ -514,18 +438,14 @@
   },
   {
     "title": "Disney Frozen Wooden Puzzle",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": true,
-      "educational": true,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": true,
+    "educational": true,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": "This Frozen puzzle set includes 5 different Frozen puzzles, 24 pieces each. Puzzles measure 11.2 in x 8.4 in (1) and 5.6 in x 4.2 in (4).",
     "images": [],
     "main_image": "frozenPuzzle.jpg",
@@ -541,18 +461,14 @@
   },
   {
     "title": "Train Set",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " 550 PCS BLOCKS: Each pieces made of real, high-quality birch wood. Each has indentations help to connect it with others. It includes roof, roof facade, walls, chimney, porch, fences ,door like real house. Your little one can build their own house for hours.",
     "images": ["trainSet1.jpg", "trainSet2.jpg", "trainSet3.jpg"],
     "main_image": "trainSet.jpg",
@@ -568,18 +484,14 @@
   },
   {
     "title": "Play Kitchen",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Wooden Play Kitchen made of eco-friendly, non-toxic wood, BPA-free. This space-friendly toy kitchen is 31in wide and 12in deep after being assembled. Great for a cute nursery, let kids put the chef hat on and cook a meal for their guests.",
     "images": ["woodKitchen1.jpg", "woodKitchen2.jpg", "woodKitchen3.jpg"],
     "main_image": "woodKitchen.jpg",
@@ -595,18 +507,14 @@
   },
   {
     "title": "Wooden Dollhouse",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": true,
     "description": "A classic 3 story wood dollhouse that encourages imaginative roleplay with friends. This dollhouse for kids features 6 rooms including four room sets of a master bedroom, family bathroom, media room and kitchen. The house has unique home furnishings and household appliances that are easy to move and arranged as you like.Great opportunity for mealtime conversations and role play.",
     "images": ["dollhouse1.jpg", "dollhouse2.jpg", "dollhouse3.jpg"],
     "main_image": "dollhouse.jpg",
@@ -622,18 +530,14 @@
   },
   {
     "title": "Mushroom Harvest Game",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " This is a great early education STEM style learning toy, with a simulated mushroom design and rich color matching, which can stimulate toddler interest in learning, so as to cultivate babay size cognition, spatial perception and brain puzzle development.",
     "images": ["mushroom1.jpg", "mushroom2.jpg"],
     "main_image": "mushroom.jpg",
@@ -649,18 +553,14 @@
   },
   {
     "title": "Toy Tool Workbench",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": false
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": false,
+    "bestseller": false,
     "description": " 62-piece wooden toy tool set with workbench for children. Ideal beginner set with kid-size tools and included hardware. Set includes: workbench components and 2 small drawers, 4 links, 4 gears, 10 screws, 6 nails, 10 nuts, hammer, wrench, screwdriver and a saw.",
     "images": ["workbench1.jpg", "workbench2.jpg", "workbench3.jpg"],
     "main_image": "workbench.jpg",
@@ -676,18 +576,14 @@
   },
   {
     "title": "Montessori Sorting Toy",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " High-quality wooden toys include 12 fruit blocks, 8 carrots, 10 cute worms, and a five-sided cart with different shapes and structures. Furthermore, the wooden toy is large particles, polished edges, and non-toxic water-based paint, satisfying both baby&apos;s need for fun learning and the parent&apos;s wish for safety and quality.",
     "images": ["montSort1.jpg", "montSort2.jpg"],
     "main_image": "montSort.jpg",
@@ -703,18 +599,14 @@
   },
   {
     "title": "Wooden Doctor Set",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Wooden doctor playset dentist accessories include a medical box with Stethoscope, Ointment, Medicine Tank, Pills, Dental Mold, Pliers, Scorpion, Hammer, Toothbrush, Syringe, Blood Pressure Meter, CT Display, 4 Inspection Tool, Handbag and Dental Floss.",
     "images": ["doctor1.jpg", "doctor2.jpg"],
     "main_image": "doctor.jpg",
@@ -730,18 +622,14 @@
   },
   {
     "title": "Wooden Play Food Set",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "  Our wooden play food is crafted from natural wood with a smooth, sanded edge, and colored with eco-friendly, non-toxic paint. These durable toys are a safer and more environmentally-friendly alternative to plastic toys.",
     "images": ["foodSet1.jpg", "foodSet2.jpg"],
     "main_image": "foodSet.jpg",
@@ -757,18 +645,14 @@
   },
   {
     "title": "8-in-1 Activity Cube",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": true,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": true,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Our multi-functional baby activity cube toy includes 8 games.The toys for 1 year old contains bead maze, rattle roller, shape sorter, spinning gears, 4 animal matching, 1-9 number pattern learning. Separately includes with bonus 12pcs word cards and a small stacking rings toy for 18m+ toddlers. Keep your babies and toddlers busy!",
     "images": ["activityCube1.jpg", "activityCube2.jpg"],
     "main_image": "activityCube.jpg",
@@ -784,18 +668,14 @@
   },
   {
     "title": "Magic Touch Piano",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Unleash your baby's creativity with their first piano toy; wooden piano magically makes music with just a touch; includes 3 sheets of music and 6 different songs.",
     "images": ["piano1.jpg", "piano2.jpg"],
     "main_image": "piano.jpg",
@@ -811,18 +691,14 @@
   },
   {
     "title": "Giant Teddy Bear",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Made of soft plush cover and stuffed with high quality PP cotton which is great a pleasure to cuddle. From ear to toes 39 inches, great size for snuggling and falling asleep with.",
     "images": ["teddyBear1.jpg", "teddyBear2.jpg"],
     "main_image": "teddyBear.jpg",
@@ -838,18 +714,14 @@
   },
   {
     "title": "Cute Teddy Bear",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": true,
     "description": "This is a cute,soft,retro teddy bear plush stuffed animals toys with soft and fluffy fur, hand stitched nose and satin bow.",
     "images": ["cuteTeddy1.jpg", "cuteTeddy2.jpg"],
     "main_image": "cuteTeddy.jpg",
@@ -865,18 +737,14 @@
   },
   {
     "title": "Snowflake",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Soft and cuddly furry bunny named Snowflake. Total body length is 13 inches.",
     "images": ["snowflake1.jpg"],
     "main_image": "snowflake.jpg",
@@ -892,18 +760,14 @@
   },
   {
     "title": "Pink Woodland Fox",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Super Soft & Cuddly. Baby Safe with Embroidered Eyes & Nose.",
     "images": ["fox1.jpg", "fox2.jpg"],
     "main_image": "fox.jpg",
@@ -919,18 +783,14 @@
   },
   {
     "title": "Interactive Plush Mushroom House",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Interactive velour mushroom house with four small stuffed animals. Includes four woodland animals, one velour deer, one mischievous fox, one cute pink bunny and one gray velour raccoon. Two round side windows give the animals a peek a boo view.",
     "images": ["mushHouse1.jpg", "mushHouse2.jpg"],
     "main_image": "mushHouse.jpg",
@@ -946,18 +806,14 @@
   },
   {
     "title": "Sweet Owl Dreams",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Sugar Cookie is a super cute soft furry gray owl with a white fur tummy and face. She is so huggable that kids love to sleep with her all night. Under her wings is pink velour and she has the cutest soft little gray feet. 100% baby safe. No hard parts such as eyes and/or noses. Machine Washable.",
     "images": ["owl1.jpg", "owl2.jpg"],
     "main_image": "owl.jpg",
@@ -973,18 +829,14 @@
   },
   {
     "title": "Cute Pink Elephant",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": "This Elephant Plush Animal for kids and babies comes in a beautiful pink color and is very soft and cuddly. This stuffed elephant for baby has great high-quality materials, such as super-soft polyester fibers and plush, have extra durability.",
     "images": ["elPink1.jpg"],
     "main_image": "elPink.jpg",
@@ -1000,18 +852,14 @@
   },
   {
     "title": "Cute Yellow Elephant",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": "This Elephant Plush Animal for kids and babies comes in a beautiful yellow color and is very soft and cuddly. This stuffed elephant for baby has great high-quality materials, such as super-soft polyester fibers and plush, have extra durability.",
     "images": ["elYell1.jpg"],
     "main_image": "elYell.jpg",
@@ -1027,18 +875,14 @@
   },
   {
     "title": "Interactive Pet Dog",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Adorable dog walks, barks, stretchs and wags its tail like a real puppy, it will bark when you tap its head.Puppy can perform tricks and walk on carpets, hard wood, etc.",
     "images": ["petDog1.jpg", "petDog2.jpg"],
     "main_image": "petDog.jpg",
@@ -1054,18 +898,14 @@
   },
   {
     "title": "Peek-A-Roo",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": true,
     "description": " Rainbow Momma-Roo includes a surprise baby, and both Momma-Roo and Baby-Roo have matching bonus iridescent bows!  Rainbow Peek-A-Roo comes to life with sounds and actions! She responds to your touch and senses where her baby is! These girl toys love to sing, dance, cuddle and play games with you!",
     "images": ["peek1.jpg", "peek2.jpg"],
     "main_image": "peek.jpg",
@@ -1081,18 +921,14 @@
   },
   {
     "title": "Funny Hedgehog",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " The sweetest little hedgehog in the forest! He$apos;s tickly, giggly, and loves having his soft prickles brushed. He&apos;s a little shier than his best friend Blue the Badger, but he can&apos;t wait to meet and play with you!",
     "images": ["hedgehog1.jpg", "hedgehog2.jpg"],
     "main_image": "hedgehog.jpg",
@@ -1108,18 +944,14 @@
   },
   {
     "title": "Easfan Talking Unicorn",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Electric interactive unicorn plush is adorable and unique, including the multi-function of talking, singing and walking. Children of all ages will love this well-designed walking unicorn plush toy as a cute playmate during playtime. Suitable size can let kids take it everywhere and play with.",
     "images": ["easfan1.jpg", "easfan2.jpg"],
     "main_image": "easfan.jpg",
@@ -1135,18 +967,14 @@
   },
   {
     "title": "Easfan Musical Chicken",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": "  When you Put 3 AA batteries(NOT INCLUDED) in the electric yellow chicken stuffed animal , and then press the button on its wing, this interactive chicken will flap wings and dance with 2 unique songs. Press the button to stop the music and press again to switch to another song. Grab the comb or neck of the hen and pick it up, the electric chicken stuffed animal starts squawking with wings and tail swing. The crow adds more vitality to this vivid chicken.",
     "images": ["chicken1.jpg", "chicken2.jpg"],
     "main_image": "chicken.jpg",
@@ -1162,18 +990,14 @@
   },
   {
     "title": "Dancing Singing Giraffe",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This plush giraffe toy is an interesting interactive toy. The uniqueness is that its multi-function includes singing, dancing, glowing and recording. It has a long neck. When you press the music button, it will sing cheerful songs and twist its neck to dance. Surprisingly, its neck also glows softly.",
     "images": ["giraffe1.jpg", "giraffe2.jpg"],
     "main_image": "giraffe.jpg",
@@ -1189,18 +1013,14 @@
   },
   {
     "title": "Singing Dancing Sunflower",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This magical electronic sunflower plush is an interesting interactive toy. It can record and repeat what you say, which is a cute and meaningful function. When you press the button and talk to it, the funny sunflower plush uses a very interesting sound to imitate what you say. It will bring you a smile and a happy mood.",
     "images": ["sunflower1.jpg", "sunflower2.jpg"],
     "main_image": "sunflower.jpg",
@@ -1216,18 +1036,14 @@
   },
   {
     "title": "Light up Unicorn",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This plush unicorn has a pink and white body featuring rainbow horn and wings, looking lovely and adorable. We believe that this charming unicorn is set to become a firm favorite in girl’s stuffed animal garden which can be a permanent fixture on her bed, besides,it can be night light in the camping tent.",
     "images": ["uni1.jpg", "uni2.jpg"],
     "main_image": "uni.jpg",
@@ -1243,18 +1059,14 @@
   },
   {
     "title": "Interactive Elephant",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": true,
     "description": " Interactive soft toys the baby elephant by Aidiya animated plush plays hiding & seek and sing “Do Your Ears Hang Low” with two different play modes. Press the left foot ( Sing Button )to hear the song. Press the right foot ( Aidiya Button )to play an interactive game.",
     "images": ["intElPink1.jpg", "intElPink2.jpg"],
     "main_image": "intElPink.jpg",
@@ -1270,18 +1082,14 @@
   },
   {
     "title": "Interactive Elephant",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": false
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": false,
+    "bestseller": false,
     "description": " Interactive soft toys the baby elephant by Aidiya animated plush plays hiding & seek and sing “Do Your Ears Hang Low” with two different play modes. Press the left foot ( Sing Button )to hear the song. Press the right foot ( Aidiya Button )to play an interactive game.",
     "images": ["intEl1.jpg", "intEl2.jpg"],
     "main_image": "intEl.jpg",
@@ -1297,18 +1105,14 @@
   },
   {
     "title": "Interactive Remote Control Cat ",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": false,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": false,
+    "for_girls": true,
+    "bestseller": false,
     "description": " Comes with exclusive accessories for more interactive fun. Pretend to give the plush cat a fresh wash with a blow dryer and comb its soft fur. Dress it up with skirts, let it admire itself in the mirror, and pretend to chew on bone-shaped toys.",
     "images": ["intCat1.jpg", "intCat2.jpg"],
     "main_image": "intCat.jpg",
@@ -1324,18 +1128,14 @@
   },
   {
     "title": "Singing Teddy Bear Cowboy",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": "Unlike normal teddy bears, this one wears a western feel cowboy hat, and denim overalls, with a bird on its shoulder. His 2 round bright eyes and open mouth seems to tell us that he is in a good mood. The blue robin on his should might be his buddy which is a bit small but cute.",
     "images": ["cowboy1.jpg", "cowboy2.jpg"],
     "main_image": "cowboy.jpg",
@@ -1351,18 +1151,14 @@
   },
   {
     "title": "Musical Light up Stuffed Giraffe",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This stuffed animal glows in the dark. The magical giraffe features a soothing lullaby sound and a color-changing glowing effect. Light up your kid's dormitory and help reduce the anxiety caused by the dark in your little ones. There are 10 songs are contained. Your kids can learn to sing with it and will get much fun.",
     "images": ["gir1.jpg", "gir2.jpg"],
     "main_image": "gir.jpg",
@@ -1378,18 +1174,14 @@
   },
   {
     "title": "Talking Plush Dog House",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "New adorable plush toy, &ldquo;My Dog House.&rdquo;  Each plush puppy talks and makes a real barking sound. Squeeze or hug the super soft and cuddly plush dogs to hear the cutest lifelike dog sound!",
     "images": ["dogHouse1.jpg", "dogHouse2.jpg"],
     "main_image": "dogHouse.jpg",
@@ -1405,18 +1197,14 @@
   },
   {
     "title": "Bear Dress-Up Play",
-    "categories": {
-      "wooden": true,
-      "stuffed": false,
-      "puzzle": true,
-      "educational": true,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": true,
+    "stuffed": false,
+    "puzzle": true,
+    "educational": true,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Wooden create-a-bear play set. Includes 18 interchangeable pieces. Change the outfit, shoes, and expression for hundreds of combinations!",
     "images": ["DressUp1.jpg", "DressUp2.jpg"],
     "main_image": "DressUp.jpg",
@@ -1432,18 +1220,14 @@
   },
   {
     "title": "Arden Doemei Deer",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": false,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": false,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Arden Doemei darling deer with aqua-blue and white patterned plush. She also has rose gold metallic accents in her antlers, hooves, and collar that make her aquamarine eyes pop and complement her sparkly aquamarine-colored nose.",
     "images": ["deer1.jpg", "deer2.jpg"],
     "main_image": "deer.jpg",
@@ -1459,18 +1243,14 @@
   },
   {
     "title": "Walking Husky Puppy",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " This adorable electric interactive puppy plush toy is well designed as a husky with a brown collar around its neck, and its gray and white fur and vivid expressions add to its charm. It has various unique features including walking, tail wagging, barking and head nodding which will bring surprise and interactive game fun to children. This husky puppy plush toy will be a great friend for children to play with.",
     "images": ["puppy1.jpg"],
     "main_image": "puppy.jpg",
@@ -1486,18 +1266,14 @@
   },
   {
     "title": "Pokemon Pikachu",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " 0-inch interactive plush features over 30 unique reactions.",
     "images": ["pikachu1.jpg", "pikachu2.jpg"],
     "main_image": "pikachu.jpg",
@@ -1513,18 +1289,14 @@
   },
   {
     "title": "Happy Birthday Teddy Bear",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": true
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": true,
     "description": " This is a vivacious teddy bear, it features with singing and swinging. It can sing a birthday song and it also can swing its body to the music. It not only swings its body, but also can move its mouth. When it is still, it's an elegant teddy bear. It will sing and twist neck to make your child happy after opening switch.",
     "images": ["birthdayBear1.jpg", "birthdayBear2.jpg"],
     "main_image": "birthdayBear.jpg",
@@ -1540,18 +1312,14 @@
   },
   {
     "title": "Happy Birthday Dog",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": false,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": false,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": " This is a vivacious dog, it features with singing and shaking. When you turn on the button on its right foot (embroidered with cupcake), it will sing the song “Happy Birthday To You” and it also can shake head to the music. It also can move its mouth looks not just play music simply, but really sing in front of you. The light up candle on the cupcake helps to add more atmosphere of birthday to the party.",
     "images": ["birthdayDog1.jpg", "birthdayDog2.jpg"],
     "main_image": "birthdayDog.jpg",
@@ -1567,18 +1335,14 @@
   },
   {
     "title": "Soft Learning Elephant",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": true,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": true,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "This adorable elephant baby toy is fitted with 3 buttons that light up as the toy sings. The lights are mesmerizing and can be used to distract an upset child.",
     "images": ["LearnEl1.jpg", "LearnEl2.jpg"],
     "main_image": "LearnEl.jpg",
@@ -1594,18 +1358,14 @@
   },
   {
     "title": "Smart Teddy",
-    "categories": {
-      "wooden": false,
-      "stuffed": true,
-      "puzzle": false,
-      "educational": true,
-      "interactive": true,
-      "for_boys": true,
-      "for_girls": true
-    },
-    "badges": {
-      "bestseller": false
-    },
+    "wooden": false,
+    "stuffed": true,
+    "puzzle": false,
+    "educational": true,
+    "interactive": true,
+    "for_boys": true,
+    "for_girls": true,
+    "bestseller": false,
     "description": "Imagine having a smartphone cleverly integrated into your favorite plush teddy bear, without the screen. Your child can effortlessly control it using familiar buttons on its paws, while you can conveniently manage all the features through a dedicated free parent app on your smartphone.",
     "images": ["smartTeddy1.jpg", "smartTeddy2.jpg"],
     "main_image": "smartTeddy.jpg",
