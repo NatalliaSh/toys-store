@@ -18,7 +18,7 @@ export const Header = () => {
               Email: toystore@template.com
             </a>
           </div>
-          <div className='Header__social-links'>
+          <div className='Header__socialLinks'>
             <a href='#' title='Visit'>
               <TwitIcon />
             </a>

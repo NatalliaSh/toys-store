@@ -1,0 +1,45 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.Footer {
+  background-color: $light-green;
+
+  &__container {
+    display: flex;
+    max-width: $main-context-width;
+    height: 130px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+
+    @include mobile() {
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  &__navigation,
+  &__socialLinks {
+    display: flex;
+    column-gap: 20px;
+
+    @include mobile() {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  &__navigation {
+    .NavigatePagesLinks_active {
+      color: $white;
+
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
+}
