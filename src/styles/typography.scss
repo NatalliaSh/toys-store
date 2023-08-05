@@ -1,0 +1,41 @@
+@use './mixins.scss';
+@import './functions.scss';
+@import './variables.scss';
+
+.text {
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_white {
+    color: $white;
+  }
+
+  &_s {
+    font-size: rem(12);
+  }
+
+  &_xs {
+    font-size: rem(10);
+  }
+}
+
+h6 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: rem(14);
+}
+
+h4 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: rem(21);
+}
+
+h3 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: rem(28);
+}
+
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: rem(31);
+}

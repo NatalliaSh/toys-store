@@ -1,0 +1,55 @@
+@import '../styles/variables.scss';
+.Loader {
+  position: relative;
+  top: 50vh;
+  transform: translate(-50%, 0);
+
+  .spinner {
+    margin: 0 auto;
+    width: 14.4px;
+    height: 14.4px;
+    animation: spinner-o824ag 1s infinite linear;
+
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #340532;
+      border-radius: 50%;
+      animation: spinner-vse6n7 1.25s infinite ease;
+
+      &:nth-child(1) {
+        --rotation: 90;
+      }
+
+      &:nth-child(2) {
+        --rotation: 180;
+      }
+
+      &:nth-child(3) {
+        --rotation: 270;
+      }
+
+      &:nth-child(4) {
+        --rotation: 360;
+      }
+    }
+
+    @keyframes spinner-vse6n7 {
+      0%,
+      100% {
+        transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
+      }
+
+      50% {
+        transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+      }
+    }
+
+    @keyframes spinner-o824ag {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

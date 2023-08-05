@@ -1,0 +1,38 @@
+@import '../styles/variables.scss';
+//TODO: @include mobile() - burger menu, add h4 with logo
+.Header {
+  &__contactsWrapper {
+    background-color: $light-green;
+  }
+  &__contactsContainer,
+  &__menuContainer {
+    max-width: $main-context-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  &__contactsContainer {
+    height: 32px;
+  }
+  &__menuContainer {
+    height: 72px;
+  }
+
+  &__contacts,
+  &__social-links {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__menuWrapper {
+    background-color: $white;
+  }
+  &__menuContainer {
+    nav {
+      display: flex;
+      column-gap: 30px;
+    }
+  }
+}

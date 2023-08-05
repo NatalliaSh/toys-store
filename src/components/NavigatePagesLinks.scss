@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+.NavigatePagesLinks {
+  display: block;
+  margin: auto;
+  position: relative;
+  transition: transform 0.2s ease-out 0s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5em;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  &_active {
+    font-weight: bold;
+    color: $light-green;
+
+    &:hover {
+      transform: scale(1);
+    }
+
+    &::after {
+      background-color: $light-green;
+      width: 100%;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.Basket {
+  position: relative;
+  span {
+    position: absolute;
+    top: -0.3rem;
+    right: -0.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-green;
+    border-radius: 50%;
+  }
+}
