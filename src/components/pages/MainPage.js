@@ -1,18 +1,12 @@
-/*import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { charactersDataLoad } from '../../redux/charactersDataLoad';
-import { CardsList } from '../CardsList';
-import { Loader } from '../Loader';
-import { ToTopButton } from '../ToTopButton';
-import { charactersFetchURL } from '../../CONST';
-import {
-  resetData,
-  setWorkMode,
-  updateData,
-} from '../../redux/charactersSlice';
-import { WorkModeButtons } from '../WorkModeButtons';
+/*import { charactersDataLoad } from '../../redux/charactersDataLoad';*/
+/*import { CardsList } from '../CardsList';
+import { Loader } from '../Loader';*/
+/*import { charactersFetchURL } from '../../CONST';*/
+import { updateData } from '../../redux/basketSlice.js';
 
-import './MainPage.scss';*/
+import './MainPage.scss';
 
 export const MainPage = () => {
   /*const characters = useSelector((state) => state.characters);
@@ -39,23 +33,13 @@ export const MainPage = () => {
     return () => {
       dispatch(resetData([]));
     };
-  }, []);
+  }, []);*/
 
   return (
-    <div className='MainPage'>
-      {characters.dataLoadState === 0 && 'no data'}
-      {characters.dataLoadState === 2 && (
-        <>
-          <WorkModeButtons
-            cbchangeWorkModeHandler={changeWorkModeHandler}
-            isPagingButtonActive={characters.workMode === 1}
-          />
-          <CardsList />
-          <ToTopButton />
-        </>
-      )}
-      {characters.dataLoadState === 1 && <Loader />}
-      {characters.dataLoadState === 3 && 'error: ' + characters.dataLoadError}
-    </div>
-  );*/
+    <main className='MainPage'>
+      <section className='MainPage__mainImage'>
+        <img src='/image/mainPage/IMAGEmainimg.jpg' />
+      </section>
+    </main>
+  );
 };
