@@ -112,7 +112,7 @@
       position: relative;
       width: 25px;
       height: 20px;
-      margin-right: 20px;
+
       cursor: pointer;
 
       span {
@@ -155,5 +155,10 @@
         }
       }
     }
+  }
+}
+.mobileOffset {
+  @include mobile() {
+    height: 72px;
   }
 }

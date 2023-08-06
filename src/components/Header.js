@@ -20,65 +20,68 @@ export const Header = () => {
   };
 
   return (
-    <header className='Header'>
-      <div className='Header__contactsWrapper'>
-        <div className='Header__contactsContainer text_white'>
-          <div className='Header__contacts'>
-            <a href='tel:+12139745898' title='Call Us'>
-              Call Us: +1 213 974-5898
-            </a>
-            <a href='mailto:toystore@template.com'>
-              Email: toystore@template.com
-            </a>
-          </div>
-          <div className='Header__socialLinks'>
-            <a href='#' title='Visit'>
-              <TwitIcon />
-            </a>
-            <a href='#' title='Visit'>
-              <FBIcon />
-            </a>
-            <a href='#' title='Visit'>
-              <InstaIcon />
-            </a>
+    <>
+      <header className='Header'>
+        <div className='Header__contactsWrapper'>
+          <div className='Header__contactsContainer text_white'>
+            <div className='Header__contacts'>
+              <a href='tel:+12139745898' title='Call Us'>
+                Call Us: +1 213 974-5898
+              </a>
+              <a href='mailto:toystore@template.com'>
+                Email: toystore@template.com
+              </a>
+            </div>
+            <div className='Header__socialLinks'>
+              <a href='#' title='Visit'>
+                <TwitIcon />
+              </a>
+              <a href='#' title='Visit'>
+                <FBIcon />
+              </a>
+              <a href='#' title='Visit'>
+                <InstaIcon />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='Header__menuWrapper'>
-        <div className='Header__menuContainer'>
-          <div
-            className={
-              isActive
-                ? 'Header__burger Header__burger_active'
-                : 'Header__burger'
-            }
-            onClick={burgerClickHandler}
-          >
-            <span className='Header__burger'></span>
+        <div className='Header__menuWrapper'>
+          <div className='Header__menuContainer'>
+            <div
+              className={
+                isActive
+                  ? 'Header__burger Header__burger_active'
+                  : 'Header__burger'
+              }
+              onClick={burgerClickHandler}
+            >
+              <span className='Header__burger'></span>
+            </div>
+            <NavLink
+              to='/'
+              end
+              className='Header__logo'
+              onClick={clickLinkHandler}
+            >
+              <h4>ToyStore</h4>
+            </NavLink>
+            <nav
+              className={
+                isActive
+                  ? 'Header__navigation Header__navigation_active'
+                  : 'Header__navigation'
+              }
+            >
+              <NavigatePagesLinks
+                isHeader={true}
+                cbClickLinkHandler={clickLinkHandler}
+              />
+            </nav>
+            <Basket isActive={false} cbClickLinkHandler={clickLinkHandler} />
           </div>
-          <NavLink
-            to='/'
-            end
-            className='Header__logo'
-            onClick={clickLinkHandler}
-          >
-            <h4>ToyStore</h4>
-          </NavLink>
-          <nav
-            className={
-              isActive
-                ? 'Header__navigation Header__navigation_active'
-                : 'Header__navigation'
-            }
-          >
-            <NavigatePagesLinks
-              isHeader={true}
-              cbClickLinkHandler={clickLinkHandler}
-            />
-          </nav>
-          <Basket isActive={false} cbClickLinkHandler={clickLinkHandler} />
         </div>
-      </div>
-    </header>
+      </header>
+      <div className='mobileOffset' />
+    </>
   );
 };

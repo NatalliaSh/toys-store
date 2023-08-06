@@ -1,7 +1,2 @@
-@import './styles/mixins.scss';
 
-.mobileOffset {
-  @include mobile() {
-    height: 72px;
-  }
-}
+
