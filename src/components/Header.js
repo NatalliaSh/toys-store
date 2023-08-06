@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { NavigatePagesLinks } from './NavigatePagesLinks';
 import { Basket } from './pages/Basket';
 import { TwitIcon, FBIcon, InstaIcon } from './svg/socialMediaIcons';
@@ -6,6 +7,18 @@ import { TwitIcon, FBIcon, InstaIcon } from './svg/socialMediaIcons';
 import './Header.scss';
 
 export const Header = () => {
+  const [isActive, setActive] = useState(false);
+
+  const burgerClickHandler = () => {
+    setActive(!isActive);
+    document.body.classList.toggle('lock');
+  };
+
+  const clickLinkHandler = () => {
+    setActive(false);
+    document.body.classList.remove('lock');
+  };
+
   return (
     <header className='Header'>
       <div className='Header__contactsWrapper'>
@@ -33,10 +46,37 @@ export const Header = () => {
       </div>
       <div className='Header__menuWrapper'>
         <div className='Header__menuContainer'>
-          <nav className='Header__navigation'>
-            <NavigatePagesLinks isHeader={true} />
+          <div
+            className={
+              isActive
+                ? 'Header__burger Header__burger_active'
+                : 'Header__burger'
+            }
+            onClick={burgerClickHandler}
+          >
+            <span className='Header__burger'></span>
+          </div>
+          <NavLink
+            to='/'
+            end
+            className='Header__logo'
+            onClick={clickLinkHandler}
+          >
+            <h4>ToyStore</h4>
+          </NavLink>
+          <nav
+            className={
+              isActive
+                ? 'Header__navigation Header__navigation_active'
+                : 'Header__navigation'
+            }
+          >
+            <NavigatePagesLinks
+              isHeader={true}
+              cbClickLinkHandler={clickLinkHandler}
+            />
           </nav>
-          <Basket isActive={false} />
+          <Basket isActive={false} cbClickLinkHandler={clickLinkHandler} />
         </div>
       </div>
     </header>

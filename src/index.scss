@@ -8,4 +8,8 @@ body {
   font-weight: 400;
   font-size: rem(14);
   color: $main-text;
+
+  &.lock {
+    overflow: hidden;
+  }
 }

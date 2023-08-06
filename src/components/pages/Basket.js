@@ -4,12 +4,12 @@ import { BasketIcon } from '../svg/BasketIcon';
 
 import './Basket.scss';
 
-export const Basket = ({ isActive }) => {
+export const Basket = ({ isActive, cbClickLinkHandler }) => {
   const count = 0; //потом взять это число из state basket
 
   return (
     !isActive && (
-      <NavLink to='/catalog' className='Basket'>
+      <NavLink to='/basket' className='Basket' onClick={cbClickLinkHandler}>
         <BasketIcon />
         <span className='text_s text_white'>{count}</span>
       </NavLink>

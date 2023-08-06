@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+      <div className='mobileOffset' />
       <PagesRouter />
       <Footer />
     </BrowserRouter>

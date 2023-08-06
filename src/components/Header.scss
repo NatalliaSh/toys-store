@@ -1,6 +1,13 @@
 @import '../styles/variables.scss';
-//TODO: @include mobile() - burger menu, add h4 with logo
+@import '../styles/mixins.scss';
+
 .Header {
+  @include mobile() {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+  }
+
   &__contactsWrapper {
     background-color: $light-green;
   }
@@ -18,21 +25,135 @@
   }
   &__menuContainer {
     height: 72px;
+    @include mobile() {
+      height: 40px;
+      .Basket {
+        align-self: flex-end;
+      }
+    }
   }
 
   &__contacts,
   &__socialLinks {
     display: flex;
     column-gap: 20px;
+
+    @include mobile() {
+      column-gap: 5px;
+    }
+  }
+
+  &__contacts {
+    @include mobile() {
+      flex-wrap: wrap;
+    }
   }
 
   &__menuWrapper {
     background-color: $white;
+    position: relative;
   }
-  &__menuContainer {
-    nav {
-      display: flex;
-      column-gap: 30px;
+  &__navigation {
+    display: flex;
+    column-gap: 30px;
+
+    .NavigatePagesLinks_label {
+      @include mobile() {
+        display: none;
+      }
+    }
+    @include mobile() {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -110vw;
+      height: 100%;
+      width: 100vw;
+      background-color: $main-background;
+      z-index: -1;
+      overflow: auto; //TODO - doesn't work
+      padding-top: 90px;
+      transition: left 0.5s ease-out;
+
+      &_active {
+        left: 0;
+      }
+
+      .NavigatePagesLinks {
+        margin: 0 20px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        width: max-content;
+
+        &:hover {
+          transform: scale(1);
+          font-weight: bold;
+        }
+        &::after {
+          bottom: 0.3em;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include mobile() {
+      display: inline;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include mobile() {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+
+      span {
+        position: absolute;
+        background-color: black;
+        left: 0;
+        top: 9px;
+        width: 80%;
+        height: 2px;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3s ease;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+
+      &_active {
+        span {
+          transform: scale(0);
+        }
+        &::before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        &::after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+      }
     }
   }
 }
