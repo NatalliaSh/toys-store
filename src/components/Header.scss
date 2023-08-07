@@ -13,12 +13,16 @@
   }
   &__contactsContainer,
   &__menuContainer {
-    max-width: $main-context-width;
+    max-width: $main-content-width;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 0 20px;
+
+    @include mobile() {
+      padding: 0 10px;
+    }
   }
   &__contactsContainer {
     height: 32px;

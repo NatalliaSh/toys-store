@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 import { PagesRouter } from './components/routes/PagesRouter';
 
 import './App.scss';
@@ -9,9 +11,11 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <PagesRouter />
-      <Footer />
+      <Provider store={store}>
+        <Header />
+        <PagesRouter />
+        <Footer />
+      </Provider>
     </BrowserRouter>
   );
 }

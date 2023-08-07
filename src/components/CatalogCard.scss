@@ -1,0 +1,97 @@
+@import '../styles/mixins.scss';
+@import '../styles/variables.scss';
+
+.CatalogCard {
+  display: flex;
+  justify-content: flex-start;
+  height: 188px;
+  min-width: 310px;
+  max-width: 570px;
+  border-radius: 20px;
+  background-color: $catolog-card1;
+  column-gap: 10px;
+  margin-top: 30px;
+  transition: all 0.4s ease-out;
+
+  @include mobile() {
+    height: 120px;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  &:nth-child(3n + 2) {
+    background-color: $catolog-card2;
+  }
+
+  &:nth-child(3n) {
+    background-color: $catolog-card3;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(16, 21, 22, 0.3);
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(16, 21, 22, 0.3);
+    box-shadow: 0px 0px 20px 5px rgba(16, 21, 22, 0.3);
+
+    @include mobile() {
+      transform: scale(1.03);
+    }
+  }
+
+  &__image {
+    flex: 1 0 100px;
+    max-width: 220px;
+    max-height: 220px;
+    text-align: center;
+
+    @include mobile() {
+      max-width: 130px;
+    }
+
+    img {
+      width: 100%;
+      position: relative;
+      top: -30%;
+      max-width: 200px;
+
+      @include mobile() {
+        max-width: 120px;
+      }
+    }
+  }
+
+  &__content {
+    @include mobile {
+      flex: 1 1 170px;
+    }
+    h4 {
+      margin: 40px 5px;
+
+      @include mobile {
+        margin: 15px 5px;
+        height: 2em;
+      }
+    }
+    a {
+      padding: 10px 20px;
+      background-color: $white;
+      border-radius: 20px;
+      margin: 0 5px;
+      transition: all 0.3s ease;
+
+      @include mobile {
+        padding: 5px 10px;
+      }
+
+      &:hover {
+        background-color: $button-green;
+        -moz-box-shadow: 0px 0px 20px 5px rgba(16, 21, 22, 0.3);
+        -webkit-box-shadow: 0px 0px 20px 5px rgba(16, 21, 22, 0.3);
+        box-shadow: 0px 0px 20px 5px rgba(16, 21, 22, 0.3);
+      }
+    }
+  }
+}

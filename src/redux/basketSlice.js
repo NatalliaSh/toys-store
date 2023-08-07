@@ -3,12 +3,9 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   dataLoadState: 0, // 0 - not loaded, 1 - is loading, 2 - loaded, 3 - error
   dataLoadError: null,
-  data: {},
-  /*data: {
-    { productID:{data:{}, amount:1 },
-    { productID:{data:{}, amount:1 }
-  }     
-  ,*/
+  data: {} /*data: { productID:{prodData:{}, amount:1 },
+                     productID:{prodData:{}, amount:1 }
+                    } */,
 };
 
 export const basketSlice = createSlice({
@@ -27,10 +24,18 @@ export const basketSlice = createSlice({
     updateProductData: (state, action) => {
       state.data[action.payload.productID].data = action.payload.data;
     },
+
+    deleteDataElement: (state, action) => {
+      delete state.data[action.payload];
+    },
   },
 });
 
-export const { updateLoadState, updateData, updateProductData } =
-  basketSlice.actions;
+export const {
+  updateLoadState,
+  updateData,
+  updateProductData,
+  deleteDataElement,
+} = basketSlice.actions;
 
 export default basketSlice.reducer;

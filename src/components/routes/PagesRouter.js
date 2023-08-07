@@ -18,10 +18,10 @@ export const PagesRouter = () => {
   return (
     <Routes>
       <Route path='/' element={<MainPage />} />
-      {/* <Route path='/catalog' element={<PageCatalog />} />
+      {/*<Route path='/catalog' element={<PageCatalog />} />
       <Route path='/products/:category' element={<PageProducts />} />
       <Route path='/product/:prid' element={<PageProduct />} />
-      <Route path='/basket' element={<PageBasket />} /> */}
+      <Route path='/basket' element={<PageBasket />} />*/}
 
       {/*<Route path='/delivery' element={<PageDelivery />} />
       <Route path='/about' element={<PageAbout />} />

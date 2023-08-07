@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <footer className='Footer'>
       <div className='Footer__container text_white'>
-        <h4>ToyStore</h4>
+        <h5>ToyStore</h5>
         <nav className='Footer__navigation'>
           <NavigatePagesLinks isHeader={false} />
         </nav>

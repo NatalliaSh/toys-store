@@ -17,7 +17,7 @@ export const NavigatePagesLinks = ({ isHeader, cbClickLinkHandler }) => {
         end
         className={isHeader ? 'NavigatePagesLinks_label' : getLinkClass}
       >
-        {isHeader && <h4>ToyStore</h4>}
+        {isHeader && <h5>ToyStore</h5>}
         {!isHeader && 'Home'}
       </NavLink>
       <NavLink

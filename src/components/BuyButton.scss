@@ -1,0 +1,104 @@
+@import '../styles/variables.scss';
+
+.BuyButton {
+  white-space: pre-wrap;
+  &__priceButton {
+    background-color: $light-green;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &__addToBasketSection {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .numberInput {
+      display: flex;
+      justify-content: center;
+
+      &__minusButton,
+      &__plusButton {
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+
+        &:focus,
+        &:hover {
+          background-color: $light-green;
+          color: $white;
+        }
+
+        &::before {
+          content: '';
+          border-bottom: 2px solid;
+          width: 10px;
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          left: 5px;
+        }
+      }
+      &__plusButton {
+        &::after {
+          content: '';
+          border-top: 2px solid;
+          width: 10px;
+          position: absolute;
+          top: 9px;
+          left: 5px;
+          transform: rotate(90deg);
+        }
+      }
+      &__input {
+        border: none;
+        outline: none;
+        text-align: center;
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          display: none;
+        }
+      }
+    }
+
+    .addToBasketSection__addToBasketButton {
+      position: relative;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 5px;
+      background-color: $light-green;
+      border-radius: 7px;
+
+      &:hover {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+
+      span {
+        position: absolute;
+        top: -0.6em;
+        right: -0.5em;
+        width: 1.5em;
+        height: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $orange;
+        border-radius: 50%;
+      }
+    }
+  }
+}

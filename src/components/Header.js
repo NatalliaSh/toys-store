@@ -63,7 +63,7 @@ export const Header = () => {
               className='Header__logo'
               onClick={clickLinkHandler}
             >
-              <h4>ToyStore</h4>
+              <h5>ToyStore</h5>
             </NavLink>
             <nav
               className={
