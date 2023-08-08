@@ -73,6 +73,9 @@ export const MainPage = () => {
             <section className='MainPage__bestSellerItems bestSellerItems'>
               <div className='bestSellerItems__title'>
                 <h4>Stuffed Animals</h4>
+                <NavLink to={'/products/' + category.stuffed}>
+                  See All Toys &rarr;
+                </NavLink>
               </div>
               <div className='bestSellerItems__container'>
                 <Slider
@@ -86,6 +89,9 @@ export const MainPage = () => {
             <section className='MainPage__bestSellerItems bestSellerItems'>
               <div className='bestSellerItems__title'>
                 <h4>Wooden Toys</h4>
+                <NavLink to={'/products/' + category.wooden}>
+                  See All Toys &rarr;
+                </NavLink>
               </div>
               <div className='bestSellerItems__container'>
                 <Slider

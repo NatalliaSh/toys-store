@@ -43,7 +43,7 @@ export const Slider = React.forwardRef(
           modules: [Scrollbar],
           injectStylesUrls: ['path/to/scrollbar-element.min.css'],
           injectStyles: [
-            `:host .swiper-scrollbar {top: 0;}`,
+            `:host .swiper-scrollbar {top: 0; left: 0; width: 100%}`,
             `.swiper-scrollbar-drag {background-color: #a5c926;}`,
           ],
         };
