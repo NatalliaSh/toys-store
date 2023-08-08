@@ -1,5 +1,6 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
+@import 'swiper/css/scrollbar';
 
 .MainPage {
   background-color: $main-background;
@@ -47,6 +48,30 @@
 
       @include mobile() {
         flex: 1 0 330px;
+      }
+    }
+  }
+
+  &__bestSellerItems {
+    .bestSellerItems__container {
+      swiper-container {
+        .swiper-scrollbar {
+          display: none;
+
+          &-drag {
+            color: $light-green;
+          }
+        }
+
+        swiper-slide {
+          width: 300px;
+          margin: 40px 0;
+
+          @include mobile() {
+            width: 200px;
+            margin: 20px 0;
+          }
+        }
       }
     }
   }

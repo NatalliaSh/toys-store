@@ -46,8 +46,6 @@ export const BuyButton = ({ productData }) => {
 
   const resetError = () => setError('');
 
-  console.log('BuyButton render');
-
   return (
     <div className='BuyButton'>
       {!isActive && (

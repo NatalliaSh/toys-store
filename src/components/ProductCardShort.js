@@ -7,14 +7,17 @@ import './ProductCardShort.scss';
 export const ProductCardShort = ({ productData }) => {
   return (
     <div className='ProductCardShort'>
-      <NavLink
-        to={'/product/' + productData.id}
-        className='ProductCardShort__presentation'
-      >
-        <img src={'/image/products/' + productData.main_image}></img>
-        <h6>{productData.title}</h6>
-      </NavLink>
-      <BuyButton productData={productData}></BuyButton>
+      <div className='ProductCardShort__image'>
+        <NavLink to={'/product/' + productData.id}>
+          <img src={'/image/products/' + productData.main_image}></img>
+        </NavLink>
+      </div>
+      <div className='ProductCardShort__description'>
+        <NavLink to={'/product/' + productData.id}>
+          <h6>{productData.title}</h6>
+        </NavLink>
+        <BuyButton productData={productData}></BuyButton>
+      </div>
     </div>
   );
 };
