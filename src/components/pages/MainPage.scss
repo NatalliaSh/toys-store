@@ -52,30 +52,6 @@
     }
   }
 
-  &__bestSellerItems {
-    .bestSellerItems__container {
-      swiper-container {
-        .swiper-scrollbar {
-          display: none;
-
-          &-drag {
-            color: $light-green;
-          }
-        }
-
-        swiper-slide {
-          width: 300px;
-          margin: 40px 0;
-
-          @include mobile() {
-            width: 200px;
-            margin: 20px 0;
-          }
-        }
-      }
-    }
-  }
-
   &__aboutUs {
     position: relative;
     img {

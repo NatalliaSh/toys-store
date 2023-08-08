@@ -1,5 +1,4 @@
-import React, { useEffect, useMemo, useRef, useLayoutEffect } from 'react';
-import { register } from 'swiper/element/bundle';
+import React, { useEffect, useMemo, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { productsDataLoad } from '../../redux/productsDataLoad.js';
@@ -7,13 +6,9 @@ import { Loader } from '../Loader';
 import { CatalogCard } from '../CatalogCard.js';
 import { ProductCardShort } from '../ProductCardShort.js';
 import { category } from '../../CONST.js';
-import { Scrollbar } from 'swiper/modules';
-
-import 'swiper/element/css/scrollbar';
+import { Slider } from '../Slider.js';
 
 import './MainPage.scss';
-
-register();
 
 export const MainPage = () => {
   const products = useSelector((state) => state.products);
@@ -31,66 +26,6 @@ export const MainPage = () => {
       console.log('dataLoad');
     }
   }, []);
-
-  //slider settings
-  useEffect(() => {
-    function handleMouseEnter(e) {
-      const autoplay = e.target.swiper.autoplay;
-      autoplay.stop();
-    }
-    function handleMouseLeave(e) {
-      const autoplay = e.target.swiper.autoplay;
-      autoplay.start();
-    }
-
-    if (
-      products.dataByCategory.bestseller &&
-      swiperElRef.current &&
-      swiperElRef2.current
-    ) {
-      // listen for Swiper events
-      swiperElRef.current.addEventListener('mouseenter', handleMouseEnter);
-      swiperElRef.current.addEventListener('mouseleave', handleMouseLeave);
-      swiperElRef2.current.addEventListener('mouseenter', handleMouseEnter);
-      swiperElRef2.current.addEventListener('mouseleave', handleMouseLeave);
-
-      const params = {
-        modules: [Scrollbar],
-        injectStylesUrls: ['path/to/scrollbar-element.min.css'],
-        injectStyles: [
-          `:host .swiper-scrollbar {top: 0;}`,
-          `.swiper-scrollbar-drag {background-color: #a5c926;}`,
-        ],
-      };
-      Object.assign(swiperElRef.current, params);
-      swiperElRef.current.initialize();
-      Object.assign(swiperElRef2.current, params);
-      swiperElRef2.current.initialize();
-    }
-
-    return () => {
-      if (
-        products.dataByCategory.bestseller &&
-        swiperElRef.current &&
-        swiperElRef2.current
-      ) {
-        const a = swiperElRef.current.removeEventListener(
-          'mouseenter',
-          handleMouseEnter,
-        );
-        swiperElRef.current.removeEventListener('mouseleave', handleMouseLeave);
-
-        swiperElRef2.current.removeEventListener(
-          'mouseenter',
-          handleMouseEnter,
-        );
-        swiperElRef2.current.removeEventListener(
-          'mouseleave',
-          handleMouseLeave,
-        );
-      }
-    };
-  }, [products.dataByCategory.bestseller]);
 
   const stuffedBestseller = useMemo(() => {
     if (products.dataByCategory.bestseller) {
@@ -140,20 +75,12 @@ export const MainPage = () => {
                 <h4>Stuffed Animals</h4>
               </div>
               <div className='bestSellerItems__container'>
-                <swiper-container
-                  init='false'
+                <Slider
                   ref={swiperElRef}
-                  slides-per-view='auto'
-                  scrollbar='true'
-                  autoplay='true'
-                  autoplay-disable-on-interaction='false'
-                  autoplay-delay='1000'
-                  speed='5000'
-                  loop='true'
-                  centered-slides='true'
+                  dependencies={products.dataByCategory.bestseller}
                 >
                   {stuffedBestseller}
-                </swiper-container>
+                </Slider>
               </div>
             </section>
             <section className='MainPage__bestSellerItems bestSellerItems'>
@@ -161,21 +88,13 @@ export const MainPage = () => {
                 <h4>Wooden Toys</h4>
               </div>
               <div className='bestSellerItems__container'>
-                <swiper-container
-                  init='false'
+                <Slider
                   ref={swiperElRef2}
-                  slides-per-view='auto'
-                  scrollbar='true'
-                  autoplay='true'
-                  autoplay-disable-on-interaction='false'
-                  autoplay-reverse-direction='true'
-                  autoplay-delay='1000'
-                  speed='5000'
-                  loop='true'
-                  centered-slides='true'
+                  dependencies={products.dataByCategory.bestseller}
+                  settings={{ autoplayReverseDirection: 'true' }}
                 >
                   {woodenBestseller}
-                </swiper-container>
+                </Slider>
               </div>
             </section>
           </>

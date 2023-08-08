@@ -1,0 +1,14 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+swiper-container {
+  swiper-slide {
+    width: 300px;
+    margin: 40px 0;
+
+    @include mobile() {
+      width: 200px;
+      margin: 20px 0;
+    }
+  }
+}
