@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { productsDataLoad } from '../../redux/productsDataLoad.js';
 import { Loader } from '../Loader';
-import { CatalogCard } from '../CatalogCard.js';
-import { ProductCardShort } from '../ProductCardShort.js';
+import { CatalogCard } from '../cards/CatalogCard.js';
+import { ProductCardShort } from '../cards/ProductCardShort.js';
 import { category } from '../../CONST.js';
 import { Slider } from '../Slider.js';
 

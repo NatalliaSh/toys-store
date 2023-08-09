@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { catalogImageSRC, categoryTitle } from '../CONST';
+import { catalogImageSRC, categoryTitle } from '../../CONST';
 
 import './CatalogCard.scss';
 
