@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.AddToBasketButton {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  background-color: $light-green;
+  border-radius: 7px;
+
+  &:hover {
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    top: -0.6em;
+    right: -0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange;
+    border-radius: 50%;
+  }
+}

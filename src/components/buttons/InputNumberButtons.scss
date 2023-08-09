@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+
+.InputNumberButtons {
+  display: flex;
+  justify-content: center;
+
+  &__minusButton,
+  &__plusButton {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background-color: $light-green;
+      color: $white;
+    }
+
+    &::before {
+      content: '';
+      border-bottom: 2px solid;
+      width: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 5px;
+    }
+  }
+  &__plusButton {
+    &::after {
+      content: '';
+      border-top: 2px solid;
+      width: 10px;
+      position: absolute;
+      top: 9px;
+      left: 5px;
+      transform: rotate(90deg);
+    }
+  }
+  &__input {
+    border: none;
+    outline: none;
+    text-align: center;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+}
