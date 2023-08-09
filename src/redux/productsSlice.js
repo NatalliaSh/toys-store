@@ -3,8 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   dataLoadState: 0, // 0 - not loaded, 1 - is loading, 2 - loaded, 3 - error
   dataLoadError: null,
-  dataAll: null,
-  dataByCategory: {
+  data: {
+    all: null,
     wooden: null,
     stuffed: null,
     puzzle: null,
@@ -25,17 +25,12 @@ export const productsSlice = createSlice({
       state.dataLoadError = action.payload.error;
     },
 
-    updateDataAll: (state, action) => {
-      state.dataAll = action.payload;
-    },
-
-    updateDataByCategory: (state, action) => {
-      state.dataByCategory[action.payload.category] = action.payload.data;
+    updateData: (state, action) => {
+      state.data[action.payload.category] = action.payload.data;
     },
   },
 });
 
-export const { updateLoadState, updateDataAll, updateDataByCategory } =
-  productsSlice.actions;
+export const { updateLoadState, updateData } = productsSlice.actions;
 
 export default productsSlice.reducer;

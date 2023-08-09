@@ -11,6 +11,7 @@ import { Slider } from '../Slider.js';
 import './MainPage.scss';
 
 export const MainPage = () => {
+  window.scrollTo(0, 0);
   const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
   const swiperElRef = useRef(null);
@@ -21,15 +22,15 @@ export const MainPage = () => {
   };
 
   useEffect(() => {
-    if (!products.dataByCategory.bestseller) {
+    if (!products.data.bestseller) {
       load(category.bestseller);
       console.log('dataLoad');
     }
   }, []);
 
   const stuffedBestseller = useMemo(() => {
-    if (products.dataByCategory.bestseller) {
-      const stuffed = products.dataByCategory.bestseller.filter(
+    if (products.data.bestseller) {
+      const stuffed = products.data.bestseller.filter(
         (product) => product.stuffed,
       );
 
@@ -39,11 +40,11 @@ export const MainPage = () => {
         </swiper-slide>
       ));
     }
-  }, [products.dataByCategory.bestseller]);
+  }, [products.data.bestseller]);
 
   const woodenBestseller = useMemo(() => {
-    if (products.dataByCategory.bestseller) {
-      const wooden = products.dataByCategory.bestseller.filter(
+    if (products.data.bestseller) {
+      const wooden = products.data.bestseller.filter(
         (product) => product.wooden,
       );
 
@@ -53,7 +54,7 @@ export const MainPage = () => {
         </swiper-slide>
       ));
     }
-  }, [products.dataByCategory.bestseller]);
+  }, [products.data.bestseller]);
 
   return (
     <main className='MainPage'>
@@ -80,7 +81,7 @@ export const MainPage = () => {
               <div className='bestSellerItems__container'>
                 <Slider
                   ref={swiperElRef}
-                  dependencies={products.dataByCategory.bestseller}
+                  dependencies={products.data.bestseller}
                 >
                   {stuffedBestseller}
                 </Slider>
@@ -96,7 +97,7 @@ export const MainPage = () => {
               <div className='bestSellerItems__container'>
                 <Slider
                   ref={swiperElRef2}
-                  dependencies={products.dataByCategory.bestseller}
+                  dependencies={products.data.bestseller}
                   settings={{ autoplayReverseDirection: 'true' }}
                 >
                   {woodenBestseller}
