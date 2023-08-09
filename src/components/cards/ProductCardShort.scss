@@ -31,7 +31,7 @@
       opacity: 0.5;
       filter: blur(20px);
       border-radius: inherit;
-      padding: 3px;
+      //padding: 3px;
       z-index: -5;
 
       @include mobile() {
