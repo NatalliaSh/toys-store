@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.CatalogPage {
+  background-color: $main-background;
+
+  &__contentWrapper {
+    max-width: $main-content-width;
+    margin: 0 auto;
+    padding: 50px 20px;
+    @include mobile() {
+      padding: 20px 10px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 40px;
+    column-gap: 20px;
+
+    @include mobile() {
+      row-gap: 20px;
+    }
+
+    .CatalogCard {
+      flex: 1 1 400px;
+    }
+  }
+}
