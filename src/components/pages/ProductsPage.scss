@@ -12,29 +12,4 @@
       padding: 20px 10px;
     }
   }
-
-  &__sortFilterContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
-
-    @include mobile() {
-      flex-direction: column;
-      column-gap: 40px;
-      row-gap: 10px;
-    }
-  }
-
-  &__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-
-    @include mobile() {
-      gap: 10px;
-    }
-  }
 }
