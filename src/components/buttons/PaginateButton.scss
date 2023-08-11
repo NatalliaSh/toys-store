@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.PaginateButton {
+  &__next_prev,
+  &__page_numb {
+    border: none;
+    padding: 0.3em 0;
+    cursor: pointer;
+  }
+
+  &__next_prev {
+    width: 80px;
+    background-color: $background-paginationBut;
+    color: $main-background;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $light-green;
+      color: black;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      color: $disabled-text;
+      cursor: auto;
+    }
+  }
+
+  &__page_numb {
+    background: transparent;
+    width: 2em;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+
+    &:disabled {
+      border: 1px solid $disabled-paginationBut;
+      border-radius: 3px;
+      color: $disabled-paginationBut;
+      font-weight: 700;
+      cursor: auto;
+    }
+
+    &:hover:not(:disabled) {
+      font-weight: 600;
+      transform: scale(1.05);
+    }
+  }
+}

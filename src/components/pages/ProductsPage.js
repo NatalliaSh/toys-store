@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { productsDataLoad } from '../../redux/productsDataLoad.js';
 import { Loader } from '../Loader';
-import { CardList } from '../CardList.js';
+import { CardsSection } from '../CardsSection.js';
 
 import './ProductsPage.scss';
 
@@ -34,7 +34,7 @@ export const ProductsPage = () => {
           {products.dataLoadState === 1 && <Loader />}
           {products.dataLoadState === 3 && 'error: ' + products.dataLoadError}
           {products.dataLoadState === 2 && products.data[category] && (
-            <CardList products={products.data[category]} />
+            <CardsSection products={products.data[category]} />
           )}
         </section>
       </div>
