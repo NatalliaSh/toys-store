@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ProductCardShort } from './cards/ProductCardShort.js';
 import { Sort } from './Sort.js';
 import { Filter } from './Filter.js';
 import { filterParam, sortParamsInURL } from '../CONST.js';
@@ -8,6 +7,7 @@ import { sort } from '../functions/sort.js';
 import { filter } from '../functions/filter.js';
 import { Pagination } from './Pagination.js';
 import { CardList } from './CardList.js';
+import { getAllQueryParams } from '../functions/getAllQueryParams.js';
 
 import './CardsSection.scss';
 
@@ -17,8 +17,9 @@ export const CardsSection = ({ products }) => {
   const [productsCopy, setProductsCopy] = useState(products);
   const [workMode, setWorkMode] = useState(1); //0-fullList, 1-with pagination
 
-  const withCheckSearchParams = (data) => {
-    let result = data;
+  const withCheckSearchParams = (products) => {
+    //sort_filter params check
+    let result = products;
 
     if (searchParams.get('filter')) {
       result = filter(result, searchParams.get('filter'));
@@ -27,6 +28,19 @@ export const CardsSection = ({ products }) => {
       result = sort(result, searchParams.get('sort'));
     }
     setProductsCopy(result);
+
+    //pagingParams check
+    if (!searchParams.get('paging')) {
+      setSearchParams(
+        workMode === 1
+          ? { ...getAllQueryParams(searchParams), paging: 'on' }
+          : { ...getAllQueryParams(searchParams), paging: 'off' },
+      );
+    } else if (searchParams.get('paging') === 'off' && workMode === 1) {
+      setWorkMode(0);
+    } else if (searchParams.get('paging') === 'on' && workMode === 0) {
+      setWorkMode(1);
+    }
   };
 
   const filterProductsHandler = (param) => {
@@ -49,6 +63,16 @@ export const CardsSection = ({ products }) => {
         : products;
       setProductsCopy(data);
     }
+  };
+
+  const workModeButtonHandler = ({ target }) => {
+    const newWorkMode = Number(target.dataset.switchto);
+    setWorkMode(newWorkMode);
+    setSearchParams(
+      newWorkMode === 1
+        ? { ...getAllQueryParams(searchParams), paging: 'on' }
+        : { ...getAllQueryParams(searchParams), paging: 'off', page: '1' },
+    );
   };
 
   useEffect(() => {
@@ -75,7 +99,8 @@ export const CardsSection = ({ products }) => {
         <button
           type='button'
           className='CardsSection__workModeButton'
-          onClick={() => setWorkMode(1)}
+          data-switchto={1}
+          onClick={workModeButtonHandler}
         >
           Page-by-page view
         </button>
@@ -88,7 +113,8 @@ export const CardsSection = ({ products }) => {
         <button
           type='button'
           className='CardsSection__workModeButton'
-          onClick={() => setWorkMode(0)}
+          data-switchto={0}
+          onClick={workModeButtonHandler}
         >
           The full list view
         </button>
