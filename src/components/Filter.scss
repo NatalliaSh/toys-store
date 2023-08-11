@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+
+.Filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  &__button {
+    background-color: $white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+
+    &:hover:not(.Filter__button_active) {
+      transform: scale(1.05);
+    }
+
+    &_active {
+      background-color: $light-green;
+
+      span {
+        margin-left: 0.5em;
+        transition: color 0.3s ease;
+        cursor: pointer;
+        color: $white;
+
+        &:hover {
+          font-weight: 700;
+          color: black;
+        }
+      }
+    }
+  }
+}

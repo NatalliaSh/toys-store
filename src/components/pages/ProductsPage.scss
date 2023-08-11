@@ -13,6 +13,20 @@
     }
   }
 
+  &__sortFilterContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    @include mobile() {
+      flex-direction: column;
+      column-gap: 40px;
+      row-gap: 10px;
+    }
+  }
+
   &__cards {
     display: flex;
     flex-wrap: wrap;

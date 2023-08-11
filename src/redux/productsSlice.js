@@ -31,6 +31,11 @@ export const productsSlice = createSlice({
   },
 });
 
-export const { updateLoadState, updateData } = productsSlice.actions;
+export const {
+  updateLoadState,
+  updateData,
+  updateDataWithFilter,
+  updatedataWithSorting,
+} = productsSlice.actions;
 
 export default productsSlice.reducer;

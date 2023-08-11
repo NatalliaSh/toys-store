@@ -10,6 +10,7 @@ export async function productsDataLoad(dispatch, category = 'all') {
       const data = await response.json();
       dispatch(updateData({ category: category, data: data }));
       dispatch(updateLoadState({ state: 2, error: null }));
+      return data;
     } else {
       dispatch(
         updateLoadState({ state: 3, error: 'HTTP error ' + response.status }),
@@ -20,17 +21,15 @@ export async function productsDataLoad(dispatch, category = 'all') {
   }
 }
 
-export async function specificProductDataLoad(dispatch, idOrTitle) {
+export async function specificProductDataLoad(dispatch, id, setState) {
   try {
     dispatch(updateLoadState({ state: 1, error: null }));
-    const response = await fetch(productsFetchURL[idOrTitle] + idOrTitle);
+    const response = await fetch(productsFetchURL.id + id);
 
     if (response.ok) {
       const data = await response.json();
       dispatch(updateLoadState({ state: 2, error: null }));
-      console.log(data);
-
-      return data;
+      setState(data.find((el) => el.id === id));
     } else {
       dispatch(
         updateLoadState({ state: 3, error: 'HTTP error ' + response.status }),

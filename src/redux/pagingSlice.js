@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  workMode: 0, //0-allProducts, 1-pagination
+  workMode: 1, //0-allProducts, 1-pagination
   page: null,
   pagesAmount: {
     all: null,

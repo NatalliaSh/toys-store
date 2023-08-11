@@ -1,0 +1,96 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.Sort {
+  position: relative;
+  &__mainButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: $white;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+    &_active {
+      background-color: $light-green;
+    }
+  }
+  &__canceler {
+    cursor: pointer;
+    color: $white;
+    transition: color 0.3s ease;
+
+    &:hover {
+      font-weight: 700;
+      color: black;
+    }
+  }
+  &__sortMenu {
+    position: absolute;
+    top: 0 bottom;
+    right: 0;
+    width: max-content;
+    z-index: 10;
+    background-color: $white;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 1.2em 1.5em 0.5em 0.5em;
+
+    @include mobile() {
+      left: 0;
+    }
+
+    .sortMenu {
+      &__closer {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        margin: 0.3em;
+        padding: 0.1em 0.3em;
+        border: none;
+        background: none;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $light-green;
+          color: $white;
+        }
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        label {
+          display: flex;
+          column-gap: 0.5em;
+          align-items: center;
+          cursor: pointer;
+          input {
+            display: none;
+          }
+          svg {
+            visibility: hidden;
+          }
+          path {
+            fill: $light-green;
+          }
+
+          &._active {
+            svg {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
