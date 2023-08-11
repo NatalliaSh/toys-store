@@ -1,0 +1,12 @@
+@import '../styles/mixins.scss';
+
+.Pagination {
+  .PaginationButtons {
+    margin-top: 1.5em;
+    text-align: center;
+
+    @include mobile() {
+      margin-bottom: 0.5em;
+    }
+  }
+}

@@ -15,4 +15,21 @@
       row-gap: 10px;
     }
   }
+
+  &__workModeButton {
+    margin-bottom: 1em;
+    margin-left: 100%;
+    transform: translate(-100%);
+    width: max-content;
+    border: none;
+    background: none;
+    padding: 0.1em;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 600;
+      border-bottom: 2px solid black;
+    }
+  }
 }

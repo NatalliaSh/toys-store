@@ -4,6 +4,8 @@ import { PaginationButtons } from './PaginationButtons';
 import { CardList } from './CardList';
 import { getAllQueryParams } from '../functions/getAllQueryParams.js';
 
+import './Pagination.scss';
+
 export const Pagination = ({ products, limit }) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [productsByPage, setProductsByPage] = useState(
