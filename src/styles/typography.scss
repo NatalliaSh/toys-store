@@ -24,6 +24,14 @@
     color: $red;
   }
 
+  &_green {
+    color: $light-green;
+  }
+
+  &_xl {
+    font-size: rem(22);
+  }
+
   &_m {
     font-size: rem(16);
   }

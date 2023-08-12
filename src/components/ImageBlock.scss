@@ -1,0 +1,92 @@
+@import '../styles/mixins.scss';
+
+.ImageBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__mainImage {
+    img {
+      width: 100%;
+      max-height: 280px;
+
+      @include mobile() {
+        max-height: 200px;
+      }
+    }
+  }
+
+  &__additionalImages {
+    display: flex;
+    gap: 10px;
+
+    img {
+      width: 30%;
+      max-height: 90px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include mobile() {
+        max-height: 70px;
+      }
+    }
+  }
+
+  img {
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+  }
+
+  .Modal__content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+
+    @include mobile() {
+      gap: 10px;
+    }
+
+    .ImageBlock {
+      &__mainImage {
+        margin-left: 20px;
+
+        @include mobile() {
+          margin-left: 10px;
+        }
+
+        img {
+          max-height: 90vh;
+
+          @include mobile() {
+            max-height: 90vh;
+          }
+        }
+      }
+
+      &__additionalImages {
+        flex-direction: column;
+        gap: 20px;
+        margin-right: 20px;
+
+        @include mobile() {
+          gap: 10px;
+          margin-right: 10px;
+        }
+
+        img {
+          width: 100%;
+          max-height: 150px;
+
+          @include mobile() {
+            max-height: 120px;
+          }
+        }
+      }
+    }
+  }
+}

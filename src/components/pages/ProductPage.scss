@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.ProductPage {
+  background-color: $main-background;
+
+  &__contentWrapper {
+    max-width: $main-content-width;
+    margin: 0 auto;
+    padding: 50px 20px;
+    @include mobile() {
+      padding: 20px 10px;
+    }
+  }
+}

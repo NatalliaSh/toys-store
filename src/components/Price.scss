@@ -1,0 +1,27 @@
+@import '../styles/variables.scss';
+
+.Price {
+  position: relative;
+
+  &_before {
+    position: absolute;
+    top: -1.2em;
+    width: max-content;
+
+    span:first-child {
+      position: relative;
+      width: max-content;
+      margin-right: 0.3em;
+
+      &::before {
+        content: '';
+        width: 100%;
+        border-bottom: 2px solid $light-green;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}

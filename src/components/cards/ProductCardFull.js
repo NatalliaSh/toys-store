@@ -1,23 +1,32 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { BuyButton } from '../buttons/BuyButton';
+import { ImageBlock } from '../ImageBlock';
+import { Price } from '../Price';
 
-import './ProductCardShort.scss';
+import './ProductCardFull.scss';
 
 export const ProductCardFull = ({ productData }) => {
   return (
-    <div className='ProductCardShort'>
-      <div className='ProductCardShort__image'>
-        <NavLink to={'/product/' + productData.id}>
-          <img src={'/image/products/' + productData.main_image}></img>
-        </NavLink>
+    <section className='ProductCardFull'>
+      <div className='ProductCardFull__imageBlock'>
+        <ImageBlock
+          mainImg={productData.main_image}
+          additionalImg={productData.images}
+        />
       </div>
-      <div className='ProductCardShort__description'>
-        <NavLink to={'/product/' + productData.id}>
-          <h6>{productData.title}</h6>
-        </NavLink>
-        <BuyButton productData={productData}></BuyButton>
+      <div className='ProductCardFull__descriptionContainer'>
+        <div className='ProductCardFull__description description'>
+          <h4 className='description__title text_bold'>{productData.title} </h4>
+          <div className='description__description'>
+            {productData.description}{' '}
+          </div>
+        </div>
+        <Price price={productData.price} />{' '}
+        <BuyButton
+          productData={productData}
+          title={'Add to basket'}
+        ></BuyButton>
       </div>
-    </div>
+    </section>
   );
 };

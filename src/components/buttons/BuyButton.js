@@ -5,7 +5,7 @@ import { AddToBasketButton } from './AddToBasketButton';
 
 import './BuyButton.scss';
 
-export const BuyButton = ({ productData }) => {
+export const BuyButton = ({ productData, title }) => {
   const basket = useSelector((state) => state.basket);
   const inputRef = useRef(null);
 
@@ -27,7 +27,11 @@ export const BuyButton = ({ productData }) => {
           type='button'
           className='BuyButton__priceButton text_white  text_m'
           onClick={() => setActive(true)}
-        >{`${productData.price.symbol} ${productData.price.current_price} ${productData.price.currency}`}</button>
+        >
+          {title
+            ? title
+            : `${productData.price.symbol} ${productData.price.current_price} ${productData.price.currency}`}
+        </button>
       )}
       {isActive && (
         <>
