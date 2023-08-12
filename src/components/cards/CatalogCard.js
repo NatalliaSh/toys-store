@@ -14,7 +14,10 @@ export const CatalogCard = ({ categoryName }) => {
         <h4 className='CatalogCard__content text_white'>
           {categoryTitle[categoryName]}
         </h4>
-        <NavLink to={'/products/' + categoryName} className='text_bold'>
+        <NavLink
+          to={'/products/' + categoryName + '?paging=on&page=1'}
+          className='text_bold'
+        >
           Shop Now
         </NavLink>
       </div>

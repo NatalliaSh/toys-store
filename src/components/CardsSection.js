@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, redirect } from 'react-router-dom';
 import { Sort } from './Sort.js';
 import { Filter } from './Filter.js';
 import { filterParam, sortParamsInURL } from '../CONST.js';
@@ -30,16 +30,12 @@ export const CardsSection = ({ products }) => {
     setProductsCopy(result);
 
     //pagingParams check
-    if (!searchParams.get('paging')) {
-      setSearchParams(
-        workMode === 1
-          ? { ...getAllQueryParams(searchParams), paging: 'on' }
-          : { ...getAllQueryParams(searchParams), paging: 'off' },
-      );
-    } else if (searchParams.get('paging') === 'off' && workMode === 1) {
-      setWorkMode(0);
-    } else if (searchParams.get('paging') === 'on' && workMode === 0) {
-      setWorkMode(1);
+    if (searchParams.get('paging')) {
+      if (searchParams.get('paging') === 'off' && workMode === 1) {
+        setWorkMode(0);
+      } else if (searchParams.get('paging') === 'on' && workMode === 0) {
+        setWorkMode(1);
+      }
     }
   };
 

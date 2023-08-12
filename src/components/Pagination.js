@@ -40,9 +40,7 @@ export const Pagination = ({ products, limit }) => {
   };
 
   const withCheckSearchParams = () => {
-    if (!searchParams.get('page')) {
-      setSearchParams({ ...getAllQueryParams(searchParams), page: activePage });
-    } else {
+    if (searchParams.get('page')) {
       changeActivePageHandler(Number(searchParams.get('page')));
     }
   };
