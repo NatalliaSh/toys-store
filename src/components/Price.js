@@ -4,7 +4,7 @@ import './Price.scss';
 
 export const Price = ({ price }) => {
   const discont = price.discounted
-    ? 100 - (price.current_price * 100) / price.before_price
+    ? Math.round(100 - (price.current_price * 100) / price.before_price)
     : null;
 
   return (
