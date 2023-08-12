@@ -1,0 +1,14 @@
+@import '../styles/variables.scss';
+
+.PaginationButtons {
+  text-align: center;
+
+  &__blind {
+    background: transparent;
+    border: none;
+
+    &:disabled {
+      color: $disabled-text;
+    }
+  }
+}

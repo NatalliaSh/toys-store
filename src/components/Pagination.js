@@ -14,7 +14,6 @@ export const Pagination = ({ products, limit }) => {
   const [activePage, setActivePage] = useState(1);
   const [prevPage, setPrevPage] = useState(null);
   const [nextPage, setNextPage] = useState(2);
-  console.log(productsByPage);
 
   const pagesAmount = Math.ceil(products.length / limit);
 

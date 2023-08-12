@@ -15,7 +15,7 @@ export const PaginateButton = ({
   const button = isPrev ? (
     <button
       type='button'
-      className='PaginateButton__next_prev'
+      className='PaginateButton__nextPrev'
       onClick={clickButtonHandler}
       disabled={isDisabled}
     >
@@ -24,7 +24,7 @@ export const PaginateButton = ({
   ) : isNext ? (
     <button
       type='button'
-      className='PaginateButton__next_prev'
+      className='PaginateButton__nextPrev'
       onClick={clickButtonHandler}
       disabled={isDisabled}
     >
@@ -33,7 +33,7 @@ export const PaginateButton = ({
   ) : (
     <button
       type='button'
-      className='PaginateButton__page_numb'
+      className='PaginateButton__pageNumb'
       onClick={clickButtonHandler}
       disabled={isDisabled}
     >

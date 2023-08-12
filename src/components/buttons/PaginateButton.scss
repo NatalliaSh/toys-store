@@ -1,20 +1,25 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .PaginateButton {
-  &__next_prev,
-  &__page_numb {
+  &__nextPrev,
+  &__pageNumb {
     border: none;
     padding: 0.3em 0;
     cursor: pointer;
   }
 
-  &__next_prev {
+  &__nextPrev {
     width: 80px;
     background-color: $background-paginationBut;
     color: $main-background;
     border-radius: 5px;
     font-weight: 700;
     transition: all 0.2s ease;
+
+    @include mobile() {
+      width: 70px;
+    }
 
     &:hover {
       background-color: $light-green;
@@ -28,7 +33,7 @@
     }
   }
 
-  &__page_numb {
+  &__pageNumb {
     background: transparent;
     width: 2em;
     transition: all 0.2s ease;
@@ -45,6 +50,10 @@
     &:hover:not(:disabled) {
       font-weight: 600;
       transform: scale(1.05);
+    }
+
+    &_hidden {
+      display: none;
     }
   }
 }
