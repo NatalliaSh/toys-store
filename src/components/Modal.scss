@@ -1,0 +1,39 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.Modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $modal-background;
+  z-index: 10;
+
+  &__closer {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: gray;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
