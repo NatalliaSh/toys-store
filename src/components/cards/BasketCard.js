@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateData, deleteDataElement } from '../../redux/basketSlice';
 import { InputNumberButtons } from '../buttons/InputNumberButtons';
 import { NavLink } from 'react-router-dom';
 import { withValueCheck } from '../../functions/withValueCheck';
+import { DeleteIcon } from '../svg/DeleteIcon';
 
 import './BasketCard.scss';
 
@@ -12,6 +13,7 @@ export const BasketCard = ({ productData, amount }) => {
   const inputRef = useRef(null);
 
   const [error, setError] = useState('');
+  const [isDeleted, setDeleted] = useState(false);
   console.log(`amount: ${amount}`);
 
   const totalPrice =
@@ -33,13 +35,27 @@ export const BasketCard = ({ productData, amount }) => {
         }),
       );
     } else if (inputValue <= productData.available_amount && inputValue === 0) {
-      dispatch(deleteDataElement(productData.id));
+      setDeleted(true);
     }
     setError('');
   };
 
+  useEffect(() => {
+    let timeout;
+    if (isDeleted) {
+      timeout = setTimeout(() => {
+        dispatch(deleteDataElement(productData.id));
+        //setDeleted(false);
+      }, 1200);
+    }
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [isDeleted]);
+
   return (
-    <div className='BasketCard'>
+    <div className={isDeleted ? 'BasketCard BasketCard_deleted' : 'BasketCard'}>
       <div className='BasketCard__image'>
         <NavLink to={'/product/' + productData.id}>
           <img
@@ -65,6 +81,13 @@ export const BasketCard = ({ productData, amount }) => {
           />
           <div className='totalPrice text_m text_semiBold'>
             {`${totalPrice} ${productData.price.currency}`}
+          </div>
+          <div className='BasketCard__deleteIcon'>
+            <DeleteIcon
+              onClick={() => {
+                setDeleted(true);
+              }}
+            />
           </div>
         </div>
         {error && <div className='BasketCard__error text_red'>{error}</div>}
