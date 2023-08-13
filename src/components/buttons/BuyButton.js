@@ -16,10 +16,6 @@ export const BuyButton = ({ productData, title }) => {
   const resetError = () => setError('');
   const resetActive = () => setActive(false);
 
-  useEffect(() => {
-    setActive(basket.data[productData.id] > 0);
-  }, [productData]);
-
   return (
     <div className='BuyButton'>
       {!isActive && (

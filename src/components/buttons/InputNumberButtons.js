@@ -17,12 +17,6 @@ export const InputNumberButtons = React.forwardRef(
       cbChangeInputHandler();
     };
 
-    useEffect(() => {
-      if (inputValue != value) {
-        setInputValue(value);
-      }
-    }, [value]);
-
     return (
       <div className='InputNumberButtons'>
         <button

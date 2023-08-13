@@ -23,6 +23,7 @@ export const ProductCardFull = ({ productData }) => {
         </div>
         <Price price={productData.price} />{' '}
         <BuyButton
+          key={productData.id}
           productData={productData}
           title={'Add to basket'}
         ></BuyButton>
