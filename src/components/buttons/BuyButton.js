@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { InputNumberButtons } from './InputNumberButtons';
 import { AddToBasketButton } from './AddToBasketButton';
@@ -9,16 +9,16 @@ export const BuyButton = ({ productData, title }) => {
   const basket = useSelector((state) => state.basket);
   const inputRef = useRef(null);
 
-  const [isActive, setActive] = useState(
-    Boolean(
-      basket.data[productData.id] && basket.data[productData.id].amount > 0,
-    ),
-  );
+  const [isActive, setActive] = useState(basket.data[productData.id] > 0);
   const [error, setError] = useState('');
 
   const errorSetter = (str) => setError(str);
   const resetError = () => setError('');
   const resetActive = () => setActive(false);
+
+  useEffect(() => {
+    setActive(basket.data[productData.id] > 0);
+  }, [productData]);
 
   return (
     <div className='BuyButton'>
@@ -39,9 +39,7 @@ export const BuyButton = ({ productData, title }) => {
             <InputNumberButtons
               ref={inputRef}
               value={
-                basket.data[productData.id]
-                  ? basket.data[productData.id].amount
-                  : 1
+                basket.data[productData.id] ? basket.data[productData.id] : 1
               }
               minValue={0}
               maxValue={productData.available_amount}

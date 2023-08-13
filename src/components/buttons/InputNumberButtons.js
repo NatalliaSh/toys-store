@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './InputNumberButtons.scss';
 
@@ -16,6 +16,12 @@ export const InputNumberButtons = React.forwardRef(
       setInputValue(value);
       cbChangeInputHandler();
     };
+
+    useEffect(() => {
+      if (inputValue != value) {
+        setInputValue(value);
+      }
+    }, [value]);
 
     return (
       <div className='InputNumberButtons'>
