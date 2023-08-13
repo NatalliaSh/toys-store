@@ -9,6 +9,10 @@
   padding: 10px;
   gap: 20px;
 
+  @include mobile() {
+    width: 320px;
+  }
+
   &_deleted {
     -webkit-animation-name: flipOutX;
     animation-name: flipOutX;
@@ -16,10 +20,6 @@
     animation-duration: 1.3s;
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
-  }
-
-  @include mobile() {
-    width: 330px;
   }
 
   &__image {

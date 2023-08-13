@@ -14,7 +14,6 @@ export const BasketCard = ({ productData, amount }) => {
 
   const [error, setError] = useState('');
   const [isDeleted, setDeleted] = useState(false);
-  console.log(`amount: ${amount}`);
 
   const totalPrice =
     Math.round(amount * productData.price.current_price * 100) / 100;

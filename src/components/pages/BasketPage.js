@@ -19,7 +19,14 @@ export const BasketPage = () => {
         )
       : null;
 
-  console.log(dataOfProductsInBasket);
+  const totalPrice = dataOfProductsInBasket
+    ? Object.keys(basket.data).reduce((acc, id) => {
+        const value =
+          dataOfProductsInBasket.find((el) => el.id === id).price
+            .current_price * basket.data[id];
+        return acc + value;
+      }, 0)
+    : null;
 
   const load = (category) => {
     dispatch((dispatch) => {
@@ -42,16 +49,29 @@ export const BasketPage = () => {
           </div>
         )}
         {!isEmpty && (
-          <div className='BasketPage__cardsContainer'>
-            {dataOfProductsInBasket &&
-              dataOfProductsInBasket.map((el) => (
-                <BasketCard
-                  key={el.id}
-                  productData={el}
-                  amount={basket.data[el.id]}
-                />
-              ))}
-          </div>
+          <>
+            <div className='BasketPage__cardsContainer'>
+              {dataOfProductsInBasket &&
+                dataOfProductsInBasket.map((el) => (
+                  <BasketCard
+                    key={el.id}
+                    productData={el}
+                    amount={basket.data[el.id]}
+                  />
+                ))}
+            </div>
+            <div className='BasketPage__totalSum text_m text_semiBold'>
+              <span>Total Price:</span>
+              <span>{`${totalPrice} ${dataOfProductsInBasket[0].price.currency}`}</span>
+            </div>
+
+            <button
+              type='button'
+              className='BasketPage__buyButton text_l text_semiBold text_white'
+            >
+              Buy Now
+            </button>
+          </>
         )}
       </div>
     </main>
