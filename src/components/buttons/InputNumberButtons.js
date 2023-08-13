@@ -14,7 +14,7 @@ export const InputNumberButtons = React.forwardRef(
         value = inputValue < maxValue ? Number(inputValue) + 1 : maxValue;
       }
       setInputValue(value);
-      cbChangeInputHandler();
+      cbChangeInputHandler(value);
     };
 
     return (

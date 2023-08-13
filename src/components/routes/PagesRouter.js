@@ -4,9 +4,7 @@ import { MainPage } from '../pages/MainPage';
 import { CatalogPage } from '../pages/CatalogPage';
 import { ProductsPage } from '../pages/ProductsPage';
 import { ProductPage } from '../pages/ProductPage';
-/*
-import { PageBasket } from '../pages/PageFilmDetails';
-*/
+import { BasketPage } from '../pages/BasketPage';
 
 /*
 import { PageDelivery } from '../pages/PageFilmDetails';
@@ -21,10 +19,7 @@ export const PagesRouter = () => {
       <Route path='/catalog' element={<CatalogPage />} />
       <Route path='/products/:category' element={<ProductsPage />} />
       <Route path='/product/:productId' element={<ProductPage />} />
-      {/*
-     
-     
-      <Route path='/basket' element={<PageBasket />} />*/}
+      <Route path='/basket' element={<BasketPage />} />
 
       {/*<Route path='/delivery' element={<PageDelivery />} />
       <Route path='/about' element={<PageAbout />} />

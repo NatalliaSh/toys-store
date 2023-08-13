@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavigatePagesLinks } from './NavigatePagesLinks';
-import { Basket } from './pages/Basket';
 import { TwitIcon, FBIcon, InstaIcon } from './svg/socialMediaIcons';
 
 import './Footer.scss';

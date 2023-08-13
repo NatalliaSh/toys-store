@@ -17,16 +17,17 @@ export const ProductPage = () => {
   const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
 
-  const [productData, setProductData] = useState(
-    products.data[category.all]
-      ? products.data[category.all].find((el) => el.id === id)
-      : null,
-  );
+  const productData = products.data[category.all]
+    ? products.data[category.all].find((el) => el.id === id)
+    : null;
+
+  if (productData) {
+    addProductToLSWatchedProducts(productData.id);
+  }
 
   const load = (category) => {
-    dispatch(async (dispatch) => {
-      const data = await productsDataLoad(dispatch, category);
-      setProductData(data.find((el) => el.id === id));
+    dispatch((dispatch) => {
+      productsDataLoad(dispatch, category);
     });
   };
 
@@ -35,21 +36,6 @@ export const ProductPage = () => {
       load(category.all);
     }
   }, []);
-
-  useEffect(() => {
-    if (productData) {
-      addProductToLSWatchedProducts(productData.id);
-    }
-  }, [productData]);
-
-  useEffect(() => {
-    const data = products.data[category.all]
-      ? products.data[category.all].find((el) => el.id === id)
-      : null;
-    if (data !== productData) {
-      setProductData(data);
-    }
-  }, [id]);
 
   return (
     <main className='ProductPage'>

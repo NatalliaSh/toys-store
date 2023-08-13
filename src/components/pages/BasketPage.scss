@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.BasketPage {
+  background-color: $main-background;
+  &__contentWrapper {
+    max-width: $main-content-width;
+    margin: 0 auto;
+    padding: 50px 20px;
+    @include mobile() {
+      padding: 20px 10px;
+    }
+  }
+  &__emptyMessage {
+    text-align: center;
+    min-height: 50vh;
+  }
+
+  &__cardsContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

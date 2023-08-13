@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { AddToBasketIcon } from '../svg/BasketIcon';
 import { updateData, deleteDataElement } from '../../redux/basketSlice';
+import { withValueCheck } from '../../functions/withValueCheck';
 
 import './AddToBasketButton.scss';
 
@@ -10,22 +11,10 @@ export const AddToBasketButton = React.forwardRef(
     const basket = useSelector((state) => state.basket);
     const dispatch = useDispatch();
 
-    const withValueCheck = (value) => {
-      if (value > productData.available_amount) {
-        cbError(
-          `The maximum available quantity is ${productData.available_amount}`,
-        );
-        return new Error();
-      } else if (value < 0) {
-        cbError('Invalid data format. \n Number must be positive');
-        return new Error();
-      }
-    };
-
     const addToBasket = () => {
       const value = Number(ref.current.value);
-      console.log(value);
-      if (withValueCheck(value)) return;
+
+      if (withValueCheck(value, productData.available_amount, cbError)) return;
 
       if (value <= productData.available_amount && value > 0) {
         dispatch(

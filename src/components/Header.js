@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavigatePagesLinks } from './NavigatePagesLinks';
-import { Basket } from './pages/Basket';
+import { BasketHeaderCard } from './cards/BasketHeaderCard';
 import { TwitIcon, FBIcon, InstaIcon } from './svg/socialMediaIcons';
 
 import './Header.scss';
@@ -77,7 +77,7 @@ export const Header = () => {
                 cbClickLinkHandler={clickLinkHandler}
               />
             </nav>
-            <Basket isActive={false} cbClickLinkHandler={clickLinkHandler} />
+            <BasketHeaderCard cbClickLinkHandler={clickLinkHandler} />
           </div>
         </div>
       </header>
