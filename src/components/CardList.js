@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ProductCardShort } from './cards/ProductCardShort.js';
 
 import './CardList.scss';

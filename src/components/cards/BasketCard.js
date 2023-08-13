@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateData, deleteDataElement } from '../../redux/basketSlice';
 import { InputNumberButtons } from '../buttons/InputNumberButtons';

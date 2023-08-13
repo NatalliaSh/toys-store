@@ -10,6 +10,7 @@ export const ProductCardFull = ({ productData }) => {
     <section className='ProductCardFull'>
       <div className='ProductCardFull__imageBlock'>
         <ImageBlock
+          key={productData.id}
           mainImg={productData.main_image}
           additionalImg={productData.images}
         />
