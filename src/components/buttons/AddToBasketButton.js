@@ -31,7 +31,7 @@ export const AddToBasketButton = React.forwardRef(
         dispatch(
           updateData({
             productID: productData.id,
-            data: { prodData: productData, amount: value },
+            amount: value,
           }),
         );
       } else if (value <= productData.available_amount && value === 0) {
@@ -46,12 +46,11 @@ export const AddToBasketButton = React.forwardRef(
     return (
       <button type='button' className='AddToBasketButton' onClick={addToBasket}>
         <AddToBasketIcon />
-        {basket.data[productData.id] &&
-          basket.data[productData.id].amount > 0 && (
-            <span className='text_s text_white'>
-              {basket.data[productData.id].amount}
-            </span>
-          )}
+        {basket.data[productData.id] > 0 && (
+          <span className='text_s text_white'>
+            {basket.data[productData.id]}
+          </span>
+        )}
       </button>
     );
   },
