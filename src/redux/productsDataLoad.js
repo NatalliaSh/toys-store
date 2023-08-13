@@ -21,7 +21,7 @@ export async function productsDataLoad(dispatch, category = 'all') {
   }
 }
 
-export async function specificProductDataLoad(dispatch, id, setState) {
+/*export async function specificProductDataLoad(dispatch, id, setState) {
   try {
     dispatch(updateLoadState({ state: 1, error: null }));
     const response = await fetch(productsFetchURL.id + id);
@@ -38,4 +38,4 @@ export async function specificProductDataLoad(dispatch, id, setState) {
   } catch (err) {
     dispatch(updateLoadState({ state: 3, error: err.message }));
   }
-}
+}*/

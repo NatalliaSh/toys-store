@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { specificProductDataLoad } from '../../redux/productsDataLoad.js';
 import { Loader } from '../Loader';
+import { productsDataLoad } from '../../redux/productsDataLoad.js';
 import { ProductCardFull } from '../cards/ProductCardFull.js';
+import { category } from '../../CONST';
+import { addProductToLSWatchedProducts } from '../../functions/localStorage';
+import { WatchedProducts } from '../WatchedProducts';
+
 import './ProductPage.scss';
 
 export const ProductPage = () => {
-  window.scrollTo(0, 0);
-
   const params = useParams();
   const id = params.productId;
 
@@ -16,21 +18,38 @@ export const ProductPage = () => {
   const dispatch = useDispatch();
 
   const [productData, setProductData] = useState(
-    products.data.all ? products.data.all.find((el) => el.id === id) : null,
+    products.data[category.all]
+      ? products.data[category.all].find((el) => el.id === id)
+      : null,
   );
 
-  console.log(productData);
-
-  const load = (id, setState) => {
-    dispatch((dispatch) => specificProductDataLoad(dispatch, id, setState));
+  const load = (category) => {
+    dispatch(async (dispatch) => {
+      const data = await productsDataLoad(dispatch, category);
+      setProductData(data.find((el) => el.id === id));
+    });
   };
 
   useEffect(() => {
-    if (!productData) {
-      load(id, setProductData);
-      console.log('dataLoad');
+    if (!products.data[category.all]) {
+      load(category.all);
     }
   }, []);
+
+  useEffect(() => {
+    if (productData) {
+      addProductToLSWatchedProducts(productData.id);
+    }
+  }, [productData]);
+
+  useEffect(() => {
+    const data = products.data[category.all]
+      ? products.data[category.all].find((el) => el.id === id)
+      : null;
+    if (data !== productData) {
+      setProductData(data);
+    }
+  }, [id]);
 
   return (
     <main className='ProductPage'>
@@ -42,6 +61,9 @@ export const ProductPage = () => {
           {products.dataLoadState === 2 && productData && (
             <ProductCardFull productData={productData} />
           )}
+        </section>
+        <section className='ProductPage__watchedProducts'>
+          {products.data[category.all] && <WatchedProducts opendProdID={id} />}
         </section>
       </div>
     </main>

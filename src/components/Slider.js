@@ -8,7 +8,7 @@ import './Slider.scss';
 register();
 
 export const Slider = React.forwardRef(
-  ({ dependencies, children, settings }, ref) => {
+  ({ dependencies, children, settings, isScrollBarDown }, ref) => {
     const param = {
       slidesPerView: 'auto',
       scrollbar: 'true',
@@ -39,24 +39,29 @@ export const Slider = React.forwardRef(
         ref.current.addEventListener('mouseenter', handleMouseEnter);
         ref.current.addEventListener('mouseleave', handleMouseLeave);
 
-        const params = {
-          modules: [Scrollbar],
-          injectStylesUrls: ['path/to/scrollbar-element.min.css'],
-          injectStyles: [
-            `:host .swiper-scrollbar {top: 0; left: 0; width: 100%}`,
-            `.swiper-scrollbar-drag {background-color: #a5c926;}`,
-          ],
-        };
+        const params = isScrollBarDown
+          ? {
+              modules: [Scrollbar],
+              injectStylesUrls: ['path/to/scrollbar-element.min.css'],
+              injectStyles: [
+                `:host .swiper-scrollbar-drag {background-color: #a5c926;}`,
+              ],
+            }
+          : {
+              modules: [Scrollbar],
+              injectStylesUrls: ['path/to/scrollbar-element.min.css'],
+              injectStyles: [
+                `:host .swiper-scrollbar {top: 0; left: 0; width: 100%}`,
+                `.swiper-scrollbar-drag {background-color: #a5c926;}`,
+              ],
+            };
         Object.assign(ref.current, params);
         ref.current.initialize();
       }
 
       return () => {
         if (dependencies && ref.current) {
-          const a = ref.current.removeEventListener(
-            'mouseenter',
-            handleMouseEnter,
-          );
+          ref.current.removeEventListener('mouseenter', handleMouseEnter);
           ref.current.removeEventListener('mouseleave', handleMouseLeave);
         }
       };

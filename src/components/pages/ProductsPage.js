@@ -15,7 +15,7 @@ export const ProductsPage = () => {
   const dispatch = useDispatch();
 
   const load = (category) => {
-    dispatch(async (dispatch) => {
+    dispatch((dispatch) => {
       productsDataLoad(dispatch, category);
     });
   };

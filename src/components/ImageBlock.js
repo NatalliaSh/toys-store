@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Modal } from './Modal';
 
 import './ImageBlock.scss';
@@ -23,6 +23,13 @@ export const ImageBlock = ({ mainImg, additionalImg }) => {
   const modalHandler = () => {
     setModalActive(!isModalActive);
   };
+
+  useEffect(() => {
+    if (mainImage !== mainImg) {
+      setMainImage(mainImg);
+      setAddImage(additionalImg);
+    }
+  }, [mainImg]);
 
   const imageBlockJSX = (
     <>

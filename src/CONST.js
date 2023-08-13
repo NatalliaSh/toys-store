@@ -75,3 +75,7 @@ export const filterParam = [
   sortFilteringParams.for_girls,
   sortFilteringParams.bestseller,
 ];
+
+export const LSConst = {
+  watchedProducts: 'watchedProducts', //store arr of productsID
+};
