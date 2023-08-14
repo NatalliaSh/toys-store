@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { productsDataLoad } from '../../redux/productsDataLoad';
 import { BasketCard } from '../cards/BasketCard';
+import { Loader } from '../Loader';
 
 import './BasketPage.scss';
 
@@ -13,7 +14,7 @@ export const BasketPage = () => {
   const isEmpty = Object.keys(basket.data).length === 0 ? true : false;
 
   const dataOfProductsInBasket =
-    Object.keys(basket.data).length > 0
+    products.data.all && Object.keys(basket.data).length > 0
       ? Object.keys(basket.data).map((id) =>
           products.data.all.find((el) => el.id === id),
         )
@@ -48,7 +49,12 @@ export const BasketPage = () => {
             <h4>Your shopping cart is empty</h4>
           </div>
         )}
-        {!isEmpty && (
+        {!isEmpty && products.dataLoadState === 0 && 'no data'}
+        {!isEmpty && products.dataLoadState === 1 && <Loader />}
+        {!isEmpty &&
+          products.dataLoadState === 3 &&
+          'error: ' + products.dataLoadError}
+        {!isEmpty && dataOfProductsInBasket && (
           <>
             <div className='BasketPage__cardsContainer'>
               {dataOfProductsInBasket &&
