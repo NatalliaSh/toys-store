@@ -23,8 +23,12 @@ export const BasketPage = () => {
   const totalPrice = dataOfProductsInBasket
     ? Object.keys(basket.data).reduce((acc, id) => {
         const value =
-          dataOfProductsInBasket.find((el) => el.id === id).price
-            .current_price * basket.data[id];
+          Math.round(
+            dataOfProductsInBasket.find((el) => el.id === id).price
+              .current_price *
+              basket.data[id] *
+              100,
+          ) / 100;
         return acc + value;
       }, 0)
     : null;
