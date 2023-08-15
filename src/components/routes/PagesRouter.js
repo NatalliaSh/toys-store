@@ -5,12 +5,9 @@ import { CatalogPage } from '../pages/CatalogPage';
 import { ProductsPage } from '../pages/ProductsPage';
 import { ProductPage } from '../pages/ProductPage';
 import { BasketPage } from '../pages/BasketPage';
-
-/*
-import { PageDelivery } from '../pages/PageFilmDetails';
-import { PagePageAbout } from '../pages/PageFilmDetails';
-import { PageContacts } from '../pages/PageFilmDetails';
-*/
+import { DeliveryPage } from '../pages/DeliveryPage';
+import { AboutPage } from '../pages/AboutPage';
+import { ContactsPage } from '../pages/ContactsPage';
 
 export const PagesRouter = () => {
   return (
@@ -20,10 +17,9 @@ export const PagesRouter = () => {
       <Route path='/products/:category' element={<ProductsPage />} />
       <Route path='/product/:productId' element={<ProductPage />} />
       <Route path='/basket' element={<BasketPage />} />
-
-      {/*<Route path='/delivery' element={<PageDelivery />} />
-      <Route path='/about' element={<PageAbout />} />
-  <Route path='/contacts' element={<PageContacts />} />*/}
+      <Route path='/delivery' element={<DeliveryPage />} />
+      <Route path='/about' element={<AboutPage />} />
+      <Route path='/contacts' element={<ContactsPage />} />
     </Routes>
   );
 };
