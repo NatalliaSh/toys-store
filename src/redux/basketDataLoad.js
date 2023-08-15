@@ -49,8 +49,6 @@ export async function getBasketLoad(dispatch, userID) {
         ? { mochID: data.id, basket: data.basket }
         : await createUserBasket(userID);
 
-      console.log(personalData);
-
       if (!(personalData instanceof Error)) {
         dispatch(setMochID(personalData.mochID));
         dispatch(setBasket(personalData.basket));
