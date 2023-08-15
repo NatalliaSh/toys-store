@@ -26,7 +26,6 @@ export function addProductToLSWatchedProducts(id) {
 }
 
 export function addToLSBasket(productID, amount) {
-  console.log(productID, amount);
   const basket = JSON.parse(localStorage.getItem(LSConst.basket));
   const index = basket
     ? basket.findIndex((el) => Object.keys(el)[0] === productID)
