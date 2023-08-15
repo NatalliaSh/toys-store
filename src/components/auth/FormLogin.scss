@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.FormLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  label {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input {
+    padding: 0.5em;
+    border: 1px solid $light-green;
+    border-radius: 5px;
+    &:focus {
+      outline: 0;
+      border: 2px solid $light-green;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    &_main {
+      flex: 0 0 60%;
+    }
+
+    button {
+      padding: 0.4em 1em;
+      border: none;
+      background-color: $light-green;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

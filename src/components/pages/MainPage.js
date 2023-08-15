@@ -24,7 +24,6 @@ export const MainPage = () => {
   useEffect(() => {
     if (!products.data.bestseller) {
       load(category.bestseller);
-      console.log('dataLoad');
     }
   }, []);
 

@@ -160,6 +160,16 @@
       }
     }
   }
+
+  &__basketLoginSection {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row-reverse;
+    @include mobile() {
+      gap: 10px;
+    }
+  }
 }
 .mobileOffset {
   @include mobile() {

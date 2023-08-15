@@ -12,7 +12,6 @@ export const Filter = ({ paramArr, cbFilterProducts }) => {
     setSearchParams({ ...getAllQueryParams(searchParams), filter: param });
     cbFilterProducts(param);
     setActive(param);
-    console.log(searchParams);
   };
 
   const resetFilter = (e) => {

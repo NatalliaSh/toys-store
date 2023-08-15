@@ -80,3 +80,8 @@ export const LSConst = {
   watchedProducts: 'watchedProducts', //store arr of productsID
   basket: 'basket', //store basket if user isn't log in (format {id:amount})
 };
+
+export const AuthActions = {
+  login: 'login',
+  logout: 'logout',
+};

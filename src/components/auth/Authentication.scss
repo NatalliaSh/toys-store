@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.Authentication {
+  &__signIn,
+  &__signOut {
+    cursor: pointer;
+    position: relative;
+
+    &:hover::before {
+      position: absolute;
+      right: 1em;
+      bottom: -1em;
+      width: max-content;
+      color: $light-green;
+    }
+  }
+  &__signIn:hover::before {
+    content: 'Sign In';
+  }
+  &__signOut:hover::before {
+    content: 'Sign Out';
+  }
+
+  &__signOut {
+    svg {
+      position: relative;
+      z-index: 10;
+    }
+    span {
+      position: absolute;
+      top: -0.5em;
+      left: 1em;
+      background-color: $light-green;
+      width: 1.3em;
+      height: 1.3em;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

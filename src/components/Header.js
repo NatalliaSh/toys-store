@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { NavigatePagesLinks } from './NavigatePagesLinks';
 import { BasketHeaderCard } from './cards/BasketHeaderCard';
 import { TwitIcon, FBIcon, InstaIcon } from './svg/socialMediaIcons';
+import { Authentication } from './auth/Authentication';
 
 import './Header.scss';
 
@@ -77,7 +78,10 @@ export const Header = () => {
                 cbClickLinkHandler={clickLinkHandler}
               />
             </nav>
-            <BasketHeaderCard cbClickLinkHandler={clickLinkHandler} />
+            <div className='Header__basketLoginSection'>
+              <BasketHeaderCard cbClickLinkHandler={clickLinkHandler} />
+              <Authentication />
+            </div>
           </div>
         </div>
       </header>
