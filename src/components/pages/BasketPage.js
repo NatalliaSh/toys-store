@@ -96,7 +96,9 @@ export const BasketPage = () => {
             </div>
             <div className='BasketPage__totalSum text_m text_semiBold'>
               <span>Total Price:</span>
-              <span>{`${totalPrice} ${dataOfProductsInBasket[0].price.currency}`}</span>
+              <span>{`${totalPrice.toFixed(2)} ${
+                dataOfProductsInBasket[0].price.currency
+              }`}</span>
             </div>
 
             <button
