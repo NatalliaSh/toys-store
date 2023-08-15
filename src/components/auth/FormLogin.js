@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import './FormLogin.scss';
 
 export const FormLogin = ({ title, handleClick, isSignUp, cancelCb }) => {
-  const [email, setEmail] = useState('');
-  const [pass, setPass] = useState('');
-  const [userName, setUserName] = useState('');
+  const nameRef = useRef(null);
+  const mailRef = useRef(null);
+  const passRef = useRef(null);
 
   return (
     <form className='FormLogin'>
@@ -14,10 +14,9 @@ export const FormLogin = ({ title, handleClick, isSignUp, cancelCb }) => {
           User name:
           <input
             type='text'
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
+            defaultValue={''}
+            ref={nameRef}
             placeholder='Enter your name'
-            autoComplete='username'
           />
         </label>
       )}
@@ -25,8 +24,8 @@ export const FormLogin = ({ title, handleClick, isSignUp, cancelCb }) => {
         E-mail:
         <input
           type='email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          defaultValue={''}
+          ref={mailRef}
           placeholder='Enter email'
           autoComplete='email'
         />
@@ -35,8 +34,8 @@ export const FormLogin = ({ title, handleClick, isSignUp, cancelCb }) => {
         Password:
         <input
           type='password'
-          value={pass}
-          onChange={(e) => setPass(e.target.value)}
+          defaultValue={''}
+          ref={passRef}
           placeholder='Enter password'
           autoComplete='current-password'
         />
@@ -45,7 +44,17 @@ export const FormLogin = ({ title, handleClick, isSignUp, cancelCb }) => {
         <button
           type='button'
           className='FormLogin__buttons_main text  text_semiBold'
-          onClick={() => handleClick(email, pass, userName)}
+          onClick={() => {
+            if (nameRef.current) {
+              handleClick(
+                mailRef.current.value,
+                passRef.current.value,
+                nameRef.current.value,
+              );
+            } else {
+              handleClick(mailRef.current.value, passRef.current.value);
+            }
+          }}
         >
           {title}
         </button>
