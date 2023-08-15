@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { productsDataLoad } from '../../redux/productsDataLoad';
 import { BasketCard } from '../cards/BasketCard';
 import { Loader } from '../Loader';
+import { clearBasket } from '../../functions/basketUpdate';
+import { Modal } from '../Modal';
 
 import './BasketPage.scss';
 
@@ -10,6 +12,8 @@ export const BasketPage = () => {
   const basket = useSelector((state) => state.basket);
   const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
+
+  const [orderMessage, setOrderMessage] = useState('');
 
   const isEmpty = Object.keys(basket.data).length === 0 ? true : false;
 
@@ -33,6 +37,16 @@ export const BasketPage = () => {
       }, 0)
     : null;
 
+  const сheckoutHandler = () => {
+    clearBasket(dispatch, basket.mochID);
+
+    const orderNum = Date.now();
+    setOrderMessage(
+      `Thank you for ordering. \n Your order number is ${orderNum}. \n
+      Our operator will contact you as soon as possible to clarify the details. \n\n Have a good day! ;)`,
+    );
+  };
+
   const load = (category) => {
     dispatch((dispatch) => {
       productsDataLoad(dispatch, category);
@@ -44,6 +58,16 @@ export const BasketPage = () => {
       load('all');
     }
   }, []);
+
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      setOrderMessage('');
+    }, 4000);
+
+    return () => {
+      clearTimeout(timeOut);
+    };
+  }, [orderMessage]);
 
   return (
     <main className='BasketPage'>
@@ -78,10 +102,30 @@ export const BasketPage = () => {
             <button
               type='button'
               className='BasketPage__buyButton text_l text_semiBold text_white'
+              onClick={сheckoutHandler}
             >
               Buy Now
             </button>
           </>
+        )}
+        {orderMessage && (
+          <Modal
+            cbModalCloser={() => {
+              setOrderMessage('');
+            }}
+          >
+            <div className={'BasketPage__orderMessage text_m text_semiBold'}>
+              <span
+                className='BasketPage__messageCloser text_semiBold'
+                onClick={() => {
+                  setOrderMessage('');
+                }}
+              >
+                X
+              </span>
+              {orderMessage}
+            </div>
+          </Modal>
         )}
       </div>
     </main>

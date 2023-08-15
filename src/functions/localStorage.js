@@ -57,6 +57,10 @@ export function deleteFromLSBasket(productID) {
   localStorage.setItem(LSConst.basket, JSON.stringify(newBasket));
 }
 
+export function clearLSBasket() {
+  localStorage.setItem(LSConst.basket, JSON.stringify([]));
+}
+
 export function getSynchronizedWithLSBasketData() {
   const dataFromLS = getDataFromLS(LSConst.basket);
   const data = {};

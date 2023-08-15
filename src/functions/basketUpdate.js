@@ -1,5 +1,9 @@
-import { updateData, deleteDataElement } from '../redux/basketSlice';
-import { addToLSBasket, deleteFromLSBasket } from './localStorage';
+import { updateData, deleteDataElement, setBasket } from '../redux/basketSlice';
+import {
+  addToLSBasket,
+  deleteFromLSBasket,
+  clearLSBasket,
+} from './localStorage';
 import { updateBasketLoad } from '../redux/basketDataLoad';
 
 //if no mochID -> user isn't login -> change basket data in Local Storage
@@ -45,5 +49,15 @@ export const basketUpdate = (
 
   if (mochID) {
     updateBasketLoad(newData, mochID);
+  }
+};
+
+export const clearBasket = (dispatch, mochID) => {
+  dispatch(setBasket({}));
+
+  if (mochID) {
+    updateBasketLoad({}, mochID);
+  } else {
+    clearLSBasket();
   }
 };
