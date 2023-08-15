@@ -36,6 +36,7 @@ export const Pagination = ({ products, limit }) => {
         : e.target.innerText;
 
     changeActivePageHandler(page);
+    window.scrollTo(0, 0);
     setSearchParams({ ...getAllQueryParams(searchParams), page });
   };
 
