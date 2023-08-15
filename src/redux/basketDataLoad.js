@@ -22,7 +22,6 @@ export async function updateBasketLoad(basket, mochID) {
   const resp = await request(basketFetchURL.updateBasket + mochID, 'PUT', {
     basket,
   });
-  console.log(resp);
 }
 
 async function createUserBasket(uid) {
@@ -48,8 +47,6 @@ export async function getBasketLoad(dispatch, userID) {
       const personalData = data
         ? { mochID: data.id, basket: data.basket }
         : await createUserBasket(userID);
-
-      console.log(personalData);
 
       if (!(personalData instanceof Error)) {
         dispatch(setMochID(personalData.mochID));

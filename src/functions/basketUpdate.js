@@ -18,8 +18,6 @@ export const basketUpdate = (
   allProdInBasket,
   isWithDeleteEff,
 ) => {
-  console.log(mochID);
-
   const newData = { ...allProdInBasket };
 
   if (amount <= available_amount && amount > 0) {
