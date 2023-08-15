@@ -6,6 +6,7 @@ import { LogInIcon } from '../svg/logIcons';
 import { SignOut } from './SignOut';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../redux/userSlice';
+import { getBasketLoad } from '../../redux/basketDataLoad';
 
 import './Authentication.scss';
 
@@ -31,6 +32,15 @@ export const Authentication = () => {
       return null;
     }
   });
+
+  //synchronize basket after auth
+  useEffect(() => {
+    if (isUser) {
+      dispatch((dispatch) => {
+        getBasketLoad(dispatch, user.id);
+      });
+    }
+  }, [user]);
 
   return (
     <div className='Authentication'>

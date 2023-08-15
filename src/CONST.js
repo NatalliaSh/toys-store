@@ -48,6 +48,14 @@ export const productsFetchURL = {
   title: 'https://64ccd2bd2eafdcdc851a5560.mockapi.io/products?title=',
 };
 
+export const basketFetchURL = {
+  main: 'https://64ccd2bd2eafdcdc851a5560.mockapi.io/',
+  getBasket: 'https://64ccd2bd2eafdcdc851a5560.mockapi.io/basket',
+  setBasket: 'https://64ccd2bd2eafdcdc851a5560.mockapi.io/basket', //post
+  updateBasket: 'https://64ccd2bd2eafdcdc851a5560.mockapi.io/basket/', //+mochID PUT
+  deleteBasket: 'https://64ccd2bd2eafdcdc851a5560.mockapi.io/basket/', //+mochID DELETE
+};
+
 export const sortFilteringParams = {
   title: 'title',
   current_price: 'current_price',

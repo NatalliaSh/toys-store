@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { addToLSBasket, deleteFromLSBasket } from '../functions/localStorage';
 import { getSynchronizedWithLSBasketData } from '../functions/localStorage';
 
 const initialState = {
   dataLoadState: 0, // 0 - not loaded, 1 - is loading, 2 - loaded, 3 - error
   dataLoadError: null,
+  mochID: null,
   data: getSynchronizedWithLSBasketData() /*data: { idVavue: amount,
                                                     idVavue2: amount2
                                                                      } */,
@@ -21,17 +21,28 @@ export const basketSlice = createSlice({
 
     updateData: (state, action) => {
       state.data[action.payload.productID] = action.payload.amount;
-      addToLSBasket(action.payload.productID, action.payload.amount);
+    },
+
+    setBasket: (state, action) => {
+      state.data = action.payload;
     },
 
     deleteDataElement: (state, action) => {
       delete state.data[action.payload]; //payload = idValue
-      deleteFromLSBasket(action.payload);
+    },
+
+    setMochID(state, action) {
+      state.mochID = action.payload;
     },
   },
 });
 
-export const { updateLoadState, updateData, deleteDataElement } =
-  basketSlice.actions;
+export const {
+  updateLoadState,
+  updateData,
+  deleteDataElement,
+  setBasket,
+  setMochID,
+} = basketSlice.actions;
 
 export default basketSlice.reducer;

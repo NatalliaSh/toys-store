@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { InputNumberButtons } from './InputNumberButtons';
 import { AddToBasketButton } from './AddToBasketButton';
@@ -15,6 +15,10 @@ export const BuyButton = ({ productData, title }) => {
   const errorSetter = (str) => setError(str);
   const resetError = () => setError('');
   const resetActive = () => setActive(false);
+
+  useEffect(() => {
+    setActive(basket.data[productData.id] > 0 ? true : false);
+  }, [basket]);
 
   return (
     <div className='BuyButton'>

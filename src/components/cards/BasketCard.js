@@ -5,10 +5,12 @@ import { InputNumberButtons } from '../buttons/InputNumberButtons';
 import { NavLink } from 'react-router-dom';
 import { withValueCheck } from '../../functions/withValueCheck';
 import { DeleteIcon } from '../svg/DeleteIcon';
+import { basketUpdate } from '../../functions/basketUpdate';
 
 import './BasketCard.scss';
 
 export const BasketCard = ({ productData, amount }) => {
+  const basket = useSelector((state) => state.basket);
   const dispatch = useDispatch();
   const inputRef = useRef(null);
 
@@ -26,17 +28,34 @@ export const BasketCard = ({ productData, amount }) => {
     if (withValueCheck(inputValue, productData.available_amount, errorSetter))
       return;
 
-    if (inputValue <= productData.available_amount && inputValue > 0) {
-      dispatch(
-        updateData({
-          productID: productData.id,
-          amount: inputValue,
-        }),
-      );
-    } else if (inputValue <= productData.available_amount && inputValue === 0) {
+    if (inputValue <= productData.available_amount && inputValue === 0) {
       setDeleted(true);
     }
+
+    basketUpdate(
+      dispatch,
+      productData.id,
+      inputValue,
+      productData.available_amount,
+      basket.mochID,
+      basket.data,
+      true,
+    );
+
     setError('');
+  };
+
+  const deleteHandler = () => {
+    setDeleted(true);
+    basketUpdate(
+      dispatch,
+      productData.id,
+      0,
+      productData.available_amount,
+      basket.mochID,
+      basket.data,
+      true,
+    );
   };
 
   useEffect(() => {
@@ -44,7 +63,6 @@ export const BasketCard = ({ productData, amount }) => {
     if (isDeleted) {
       timeout = setTimeout(() => {
         dispatch(deleteDataElement(productData.id));
-        //setDeleted(false);
       }, 1200);
     }
 
@@ -82,11 +100,7 @@ export const BasketCard = ({ productData, amount }) => {
             {`${totalPrice} ${productData.price.currency}`}
           </div>
           <div className='BasketCard__deleteIcon'>
-            <DeleteIcon
-              onClick={() => {
-                setDeleted(true);
-              }}
-            />
+            <DeleteIcon onClick={deleteHandler} />
           </div>
         </div>
         {error && <div className='BasketCard__error text_red'>{error}</div>}

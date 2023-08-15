@@ -3,12 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AddToBasketIcon } from '../svg/BasketIcon';
 import { updateData, deleteDataElement } from '../../redux/basketSlice';
 import { withValueCheck } from '../../functions/withValueCheck';
+import { basketUpdate } from '../../functions/basketUpdate';
 
 import './AddToBasketButton.scss';
 
 export const AddToBasketButton = React.forwardRef(
   ({ productData, cbError, cbResetActive }, ref) => {
     const basket = useSelector((state) => state.basket);
+
     const dispatch = useDispatch();
 
     const addToBasket = () => {
@@ -16,16 +18,14 @@ export const AddToBasketButton = React.forwardRef(
 
       if (withValueCheck(value, productData.available_amount, cbError)) return;
 
-      if (value <= productData.available_amount && value > 0) {
-        dispatch(
-          updateData({
-            productID: productData.id,
-            amount: value,
-          }),
-        );
-      } else if (value <= productData.available_amount && value === 0) {
-        dispatch(deleteDataElement(productData.id));
-      }
+      basketUpdate(
+        dispatch,
+        productData.id,
+        value,
+        productData.available_amount,
+        basket.mochID,
+        basket.data,
+      );
 
       if (value === 0 && cbResetActive) {
         cbResetActive();
