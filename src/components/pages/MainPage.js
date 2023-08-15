@@ -11,7 +11,6 @@ import { Slider } from '../Slider.js';
 import './MainPage.scss';
 
 export const MainPage = () => {
-  window.scrollTo(0, 0);
   const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
   const swiperElRef = useRef(null);

@@ -5,7 +5,6 @@ import { category } from '../../CONST.js';
 import './CatalogPage.scss';
 
 export const CatalogPage = () => {
-  window.scrollTo(0, 0);
   const categories = [
     category.stuffed,
     category.wooden,
