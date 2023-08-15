@@ -17,9 +17,9 @@
   }
 
   &__workModeButton {
+    display: block;
+    margin-left: auto;
     margin-bottom: 1em;
-    margin-left: 100%;
-    transform: translate(-100%);
     width: max-content;
     border: none;
     background: none;
