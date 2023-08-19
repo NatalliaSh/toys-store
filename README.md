@@ -41,7 +41,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Used Fetch API and async/await functions for getting data from database, placed on MockAPI.\
   CSS animated loader is displayed during the loading data.
 
-- Used Web Storage API (localStorage) for storage basket data and data about recently watched products (displayed on product product/:id page if you’ve watched more than one single product).
+- Used Web Storage API (localStorage) for storage basket data and data about recently watched products.\
+  (The information about recently watched products is displayed on product/:id page if you’ve watched more than one single product).
 
 - Implemented authentication with Google Firebase.\
   (Cart information of authenticated users is stored in database on mock api).
